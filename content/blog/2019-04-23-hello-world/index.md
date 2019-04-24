@@ -1,7 +1,6 @@
 ---
 title: Hello World
 date: "2019-04-23T22:12:03.284Z"
-description: "First blog post in gatsby"
 ---
 
 Hello World! Just figured out how to setup a Gatsby Blog. Firs attempt at using gatsby.

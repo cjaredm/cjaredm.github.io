@@ -1,7 +1,6 @@
 ---
 title: How I Got Started
 date: "2019-04-24T22:12:03.284Z"
-description: "My story for how I got started as a developer"
 ---
 
 First, I spent a bunch of money I didn't have and received a BA in Philosophy. It was fun! Learned to think more logically and get new perspective... BUT didn't get me a job. Still fun though.
