@@ -14,13 +14,16 @@
     "deploy": "gatsby build && gh-pages -d public -b master"
   },
   "dependencies": {
+    "babel-plugin-styled-components": "^1.10.0",
     "gatsby": "^2.3.27",
     "gatsby-image": "^2.0.39",
     "gatsby-plugin-manifest": "^2.0.29",
     "gatsby-plugin-offline": "^2.0.25",
     "gatsby-plugin-react-helmet": "^3.0.12",
+    "gatsby-plugin-sass": "^2.0.11",
     "gatsby-plugin-sharp": "^2.0.35",
     "gatsby-source-filesystem": "^2.0.31",
+    "gatsby-transformer-remark": "^2.3.10",
     "gatsby-transformer-sharp": "^2.1.18",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
