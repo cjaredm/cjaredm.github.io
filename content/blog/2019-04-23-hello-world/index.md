@@ -3,7 +3,7 @@ title: Hello World
 date: "2019-04-23T22:12:03.284Z"
 ---
 
-Hello World! Just figured out how to setup a Gatsby Blog. Firs attempt at using gatsby.
+Hello World! Just figured out how to setup a Gatsby Blog. First attempt at using Gatsby.
 I unfortunately tried to do it the hard way, not using the start-blog they have. Got several errors with GraphQL not finding the markdown files... lame!
 So I restarted with the starter-blog and it was up and running crazy fast.
 

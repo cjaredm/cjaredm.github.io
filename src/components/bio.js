@@ -35,10 +35,10 @@ function Bio() {
               }}
             />
             <p>
-              Written by <strong>{author}</strong> who loves to learn teach and share.
+              Written by me, <strong>{author}</strong>. I love to learn teach and share.
               <br />
               <a href={`https://twitter.com/${social.twitter}`}>
-                You should follow him on Twitter
+                You should follow me on Twitter. Feel free to DM with questions.
               </a>
             </p>
           </div>
@@ -68,4 +68,4 @@ const bioQuery = graphql`
   }
 `
 
-export default Bio
+export default Bio;
