@@ -1,4 +1,77 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[cJaredm Dev Blog]]></title><description><![CDATA[Dev thoughts and mistakes.]]></description><link>https://cjaredm.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 25 Apr 2019 02:58:06 GMT</lastBuildDate><item><title><![CDATA[How I Got Started]]></title><description><![CDATA[TLDR I got degrees in things that gave me debt and no real job I loved. Got sick, literally sick, at my job and
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[cJaredm Dev Blog]]></title><description><![CDATA[Dev thoughts and mistakes.]]></description><link>https://cjaredm.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 15 May 2019 19:08:18 GMT</lastBuildDate><item><title><![CDATA[Deployed!]]></title><description><![CDATA[Finally! I deployed my first ever version 1 project. I’ve started
+many projects before but hadn’t pushed thru to get them published and live…]]></description><link>https://cjaredm.github.io/2019-05-15-deployed/</link><guid isPermaLink="false">https://cjaredm.github.io/2019-05-15-deployed/</guid><pubDate>Wed, 15 May 2019 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Finally! I deployed my first ever version 1 project. I’ve started
+many projects before but hadn’t pushed thru to get them published and live.
+This time I did it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://media.giphy.com/media/pVM4xuseBY0oIcK2Yp/giphy.gif&quot; alt=&quot;I did it!&quot;&gt;&lt;/p&gt;
+&lt;h3&gt;What’s the story?&lt;/h3&gt;
+&lt;p&gt;Last year I had been looking for projects to build, maybe something that would
+end up making me money. I asked several family and friends for ideas. I
+listened to podcasts about side hustles and these types of projects, or
+start-ups. I found that most often they stumble into a good business idea.&lt;/p&gt;
+&lt;p&gt;For instance there was a story of a company making software for plumbers to
+find customers. They made a great project and had businesses trying to
+use them but many were back out and disappear. They decided to look into how
+these businesses were using their product. They found that these small
+businesses were struggling with other things and would end up bailing on
+their product or not giving it enough attention. Their main issue was
+organizing themselves and tracking paper work.&lt;/p&gt;
+&lt;p&gt;The business pivoted and focused on helping small businesses with their
+paperwork and tracking. They became a huge success after stumbling onto
+the need of their customers.&lt;/p&gt;
+&lt;p&gt;This is what I was trying to do. I found a friend that has a manufacturing
+business as a machine shop machining parts from metals. He told me they
+have poor order/part tracking and would love to have something simple.
+Of course that kind of software already exists but not specific to his
+industry that also doesn’t have a ton of things he doesn’t want to pay for.
+I worked on it for the last 3-4 months and finally deployed a week ago!&lt;/p&gt;
+&lt;h3&gt;What is it?&lt;/h3&gt;
+&lt;p&gt;I built a a customized version of a kanban board specific to his shop/industry.
+Pretty simple at first glance, a drag and drop list of todos with specific
+machines to do them on and a finished section. I built on that idea and
+features as I went. Soon I’ll have analytics built in so that he can look
+back and see what employees are working the most efficiently, what customers
+provide the most profits, what parts are loosing them money, etc.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/898faa7dec1b1fa978fc2a5422b9d515/d248c/Job_Tracker.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 72.13389121338912%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsTAAALEwEAmpwYAAACJElEQVQoz3VRa4vTQBTN/4dlpV8EKyKCCCKKHxZRse52wQ+ya5M2TTOTxySZyfvRpEm6pYuNp4nryooHZrhz7zn3XO5IlmXphBJqEEJnsqxq2mQyubg4nynK2Yezj58/zWRlev718nKqKMr11RUlhOiE9LdUlkUceknsxVFYpWmb57u6brY35fG6wSk2ddlu63aLTNW0VV3n1TqrirKupC5/1/mnXTrqlBfdaNyNnxzGT1+5u5Nl/UjbPDOat97utbMdaZvT1eaxvn/JlyfszYn9/rn4Im3WfpFYZe5UsRetiK9pmWkZIp7+UFXGqYi+zzWF2maYfpuvrlcWiwPNo6pLnURIWb5OsiJO8jjNTIcR03SFCDin+oq7TiC4QQmzzCQMLQS2GQUhM22LGnEYSWmWRVEUx3GSJLZtG4YhhMjznDEnSVHMbMb8ICiKAhnORZIm2LFpmmEYSiiDjSz0jLFezD3Pw+aZ4xyDmazrxBdCxl8sl0EQQAzaUQxDrH14DGLOOZK4h3HQGgLMggAcJO+dUYYADwx/53wE/tnjHAxZmaOapdlCValhDOJ75wdiePq+jwznHrrYtuUwBnNd11F9OPa/zhiXUpSjNE1RxAht21ZV1TQN5jd7/BZTEPtO2DZiOGNPijJHL8SLxQKe+9vbrgdaDHyMIKGT4ziu68IEnojRBR2hH76Q99jv94fDAeK6rt0e4EiH/+Bnjz9Bd4e/Ob8AUy7mkLJwVUQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;I did it!&quot;
+        title=&quot;&quot;
+        src=&quot;/static/898faa7dec1b1fa978fc2a5422b9d515/b9e4f/Job_Tracker.png&quot;
+        srcset=&quot;/static/898faa7dec1b1fa978fc2a5422b9d515/cf440/Job_Tracker.png 148w,
+/static/898faa7dec1b1fa978fc2a5422b9d515/d2d38/Job_Tracker.png 295w,
+/static/898faa7dec1b1fa978fc2a5422b9d515/b9e4f/Job_Tracker.png 590w,
+/static/898faa7dec1b1fa978fc2a5422b9d515/f9b6a/Job_Tracker.png 885w,
+/static/898faa7dec1b1fa978fc2a5422b9d515/2d849/Job_Tracker.png 1180w,
+/static/898faa7dec1b1fa978fc2a5422b9d515/d248c/Job_Tracker.png 1195w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h3&gt;Conclusion&lt;/h3&gt;
+&lt;p&gt;He already started showing his team and will start utilizing it next week.
+Because it was a success he brought me another idea of an app to build for
+his sisters company that they’ll pay for in full, where this current project
+I own and will be charging for monthly and start selling to other shops.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[How I Got Started]]></title><description><![CDATA[TLDR I got degrees in things that gave me debt and no real job I loved. Got sick, literally sick, at my job and
 decided it was time to…]]></description><link>https://cjaredm.github.io/2019-04-24-how-i-got-started/</link><guid isPermaLink="false">https://cjaredm.github.io/2019-04-24-how-i-got-started/</guid><pubDate>Wed, 24 Apr 2019 22:12:03 GMT</pubDate><content:encoded>&lt;h4&gt;TLDR&lt;/h4&gt;
 &lt;p&gt;I got degrees in things that gave me debt and no real job I loved. Got sick, literally sick, at my job and
 decided it was time to figure something out. A friend mentored me and within 4 months I got my first dev job!&lt;/p&gt;
@@ -140,8 +213,8 @@ about it. Keep checking in.
   &lt;/span&gt;
   
   &lt;/a&gt;
-    &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[Hello World! Just figured out how to setup a Gatsby Blog. Firs attempt at using gatsby.
-I unfortunately tried to do it the hard way, not…]]></description><link>https://cjaredm.github.io/2019-04-23-hello-world/</link><guid isPermaLink="false">https://cjaredm.github.io/2019-04-23-hello-world/</guid><pubDate>Tue, 23 Apr 2019 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Hello World! Just figured out how to setup a Gatsby Blog. Firs attempt at using gatsby.
+    &lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World]]></title><description><![CDATA[Hello World! Just figured out how to setup a Gatsby Blog. First attempt at using Gatsby.
+I unfortunately tried to do it the hard way, not…]]></description><link>https://cjaredm.github.io/2019-04-23-hello-world/</link><guid isPermaLink="false">https://cjaredm.github.io/2019-04-23-hello-world/</guid><pubDate>Tue, 23 Apr 2019 22:12:03 GMT</pubDate><content:encoded>&lt;p&gt;Hello World! Just figured out how to setup a Gatsby Blog. First attempt at using Gatsby.
 I unfortunately tried to do it the hard way, not using the start-blog they have. Got several errors with GraphQL not finding the markdown files… lame!
 So I restarted with the starter-blog and it was up and running crazy fast.&lt;/p&gt;
 &lt;p&gt;I know this still looks like the same start-blog everyone has with Gatsby but I’ll come back and
