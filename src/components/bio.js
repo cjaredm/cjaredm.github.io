@@ -40,6 +40,8 @@ function Bio() {
               <a href={`https://twitter.com/${social.twitter}`}>
                 You should follow me on Twitter. Feel free to DM with questions.
               </a>
+              <br />
+              Also feel free to tell me you read a post and share with others. Thanks!
             </p>
           </div>
         )
