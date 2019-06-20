@@ -2,19 +2,35 @@ module.exports = {
   siteMetadata: {
     title: `cJaredm Dev Blog`,
     author: `Jared Mortenson`,
-    description: `Dev thoughts and mistakes.`,
-    siteUrl: `https://cjaredm.github.io`,
-    social: {
-      twitter: `cjaredm`,
-    },
+    description: `Portfolio and Dev Blog for cJaredm`,
+    siteUrl: `https://cjaredm.com`,
+    social: [
+      {
+        name: `twitter`,
+        url: "https://twitter.com/cjaredm",
+      },
+      {
+        name: "github",
+        url: "https://github.com/cjaredm",
+      },
+    ],
   },
   plugins: [
+    'gatsby-plugin-react-helmet',
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: `gatsby-plugin-manifest`,
       options: {
-        trackingId: 'UA-142492963-1',
+        name: 'gatsby-starter-default',
+        short_name: 'starter',
+        start_url: '/',
+        background_color: '#663399',
+        theme_color: '#663399',
+        display: 'minimal-ui',
+        icon: 'src/assets/images/website-icon.png', // This path is relative to the root of the site.
       },
     },
+    'gatsby-plugin-sass',
+    'gatsby-plugin-offline',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -53,26 +69,7 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-google-analytics`,
-      options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
-      },
-    },
     `gatsby-plugin-feed`,
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
-        start_url: `/`,
-        background_color: `#ffffff`,
-        theme_color: `#663399`,
-        display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
-      },
-    },
-    `gatsby-plugin-offline`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-typography`,

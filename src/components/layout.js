@@ -1,72 +1,53 @@
-import React from "react"
-import { Link } from "gatsby"
-
-import { rhythm, scale } from "../utils/typography"
+import React from 'react'
+import Header from './Header'
+import Menu from './Menu'
+import Contact from './Contact'
+import Footer from './Footer'
+import '../assets/scss/main.scss'
 
 class Layout extends React.Component {
-  render() {
-    const { location, title, children } = this.props
-    const rootPath = `${__PATH_PREFIX__}/`
-    let header
-
-    if (location.pathname === rootPath) {
-      header = (
-        <h1
-          style={{
-            ...scale(1.5),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h1>
-      )
-    } else {
-      header = (
-        <h3
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h3>
-      )
+  constructor(props) {
+    super(props)
+    this.state = {
+      isMenuVisible: false,
+      loading: 'is-loading',
     }
+    this.handleToggleMenu = this.handleToggleMenu.bind(this)
+  }
+
+  componentDidMount() {
+    this.timeoutId = setTimeout(() => {
+      this.setState({ loading: '' })
+    }, 100)
+  }
+
+  componentWillUnmount() {
+    if (this.timeoutId) {
+      clearTimeout(this.timeoutId)
+    }
+  }
+
+  handleToggleMenu() {
+    this.setState({
+      isMenuVisible: !this.state.isMenuVisible,
+    })
+  }
+
+  render() {
+    const { children } = this.props
+
     return (
       <div
-        style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(24),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
-        }}
+        className={`body ${this.state.loading} ${
+          this.state.isMenuVisible ? 'is-menu-visible' : ''
+        }`}
       >
-        <header>{header}</header>
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
+        <div id="wrapper">
+          <Header onToggleMenu={this.handleToggleMenu} />
+          {children}
+          <Footer />
+        </div>
+        <Menu onToggleMenu={this.handleToggleMenu} />
       </div>
     )
   }

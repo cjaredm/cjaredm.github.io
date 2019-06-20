@@ -11,7 +11,7 @@ I feel like it is important keep doing personal projects to keep learning new th
 
 Coming up with ideas can be hard. Sometimes I feel like I am suppose to come up with some new business idea that is totally unique and will make me tons of money. Just stop thinking like that, right now!
 
-To get started build extremely small things that you find useful. Before I really knew what programming was I was into spreadsheets, a lot. I found that Google Drive has its own script language you can use to interact with everything in your drive. Also, I know that every cell phone number has an email specific to the carrier it is on. So I made a spreadsheet with names, birthdays messages and phone numbers with carriers. Then I wrote a script that would check each day at 7 AM if today is someone’s birthday and then email their special carrier email that texts it to them from my google account. I’ll always be the first to message someone ‘Happy birthday’ on their birthday!
+To get started build extremely small things that you find useful. Before I really knew what programming was I was into spreadsheets, a lot. I found that Google Drive has its own script language you can use to interact with everything in your drive. Also, I know that every cell phone number has an email specific to the carrier it is on. So I made a spreadsheet with names, birthdays messages and phone numbers with carriers. Then I wrote a script that would check each day at 7 AM if today is someone’s birthday and then email their special carrier email that texts it to them from my google account. I’ll always be the first to message someone `Happy birthday` on their birthday!
 
 So yes, stupid project but easy and fun.
 

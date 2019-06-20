@@ -1,73 +1,119 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
+/* eslint-disable */
+import React from 'react';
+import { Link } from 'gatsby';
+import Helmet from 'react-helmet';
+import Layout from '../components/layout';
+import Banner from '../components/Banner';
 
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import pic01 from '../assets/images/MyShopAnalytics.png';
+import pic02 from '../assets/images/pic02.jpg';
+import pic03 from '../assets/images/pic03.jpg';
 
-class BlogIndex extends React.Component {
+class HomeIndex extends React.Component {
   render() {
-    const { data } = this.props
-    const siteTitle = data.site.siteMetadata.title
-    const posts = data.allMarkdownRemark.edges
-
     return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title="All posts"
-          keywords={[`blog`, `gatsby`, `javascript`, `react`]}
+      <Layout>
+        <Helmet
+          title="cJaredm - Frontend Dev"
+          meta={[
+            { name: 'description', content: 'Sample' },
+            { name: 'keywords', content: 'sample, something' },
+          ]}
         />
-        <Bio />
-        {posts.map(({ node }) => {
-          const title = node.frontmatter.title || node.fields.slug
-          return (
-            <div key={node.fields.slug}>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  {title}
-                </Link>
-              </h3>
-              <small>{node.frontmatter.date}</small>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.excerpt,
-                }}
-              />
+
+        <Banner />
+
+        <div id="main">
+          <section id="one" className="tiles">
+            <article style={{ backgroundImage: `url(${pic01})` }}>
+              <header className="major">
+                <h3>MyShopAnalytics.com</h3>
+                <p>
+                  Front and backend machine shop order, part and operation
+                  tracker currently being used daily by Alphaeus Manufacturing
+                  LLC
+                </p>
+              </header>
+              <Link to="/my-shop-analytics" className="link primary" />
+            </article>
+
+            <article style={{ backgroundImage: `url(${pic02})` }}>
+              <header className="major">
+                <h3>Runway Fashion POS</h3>
+                <p>
+                  React Native point of sale system made for iOS to be used with
+                  clothing resellers. Runway Fashion Exchange is currently
+                  working with us as our first user.
+                </p>
+              </header>
+              <Link to="/portfolio/pos-system" className="link primary" />
+            </article>
+
+            <article style={{ backgroundImage: `url(${pic03})` }}>
+              <header className="major">
+                <h3>In Theaters Soon!</h3>
+                <p>
+                  First React Native app used to learn RN. Connects to
+                  TheMovieDatabase api to show all and only upcoming movie
+                  trailers.
+                </p>
+              </header>
+              <Link to="/portfolio/in-theaters-soon" className="link primary" />
+            </article>
+
+            <article style={{ backgroundImage: `url(${pic03})` }}>
+              <header className="major">
+                <h3>Dev Blog</h3>
+                <p>
+                  This portfolio site began as my first Gatsby Static Blog. I
+                  started it on Github Pages and transitioned over to my own
+                  custom domain using Netlify.
+                </p>
+              </header>
+              <Link to="/portfolio/dev-blog" className="link primary" />
+            </article>
+          </section>
+
+          <section id="two">
+            <div className="inner">
+              <header className="major">
+                <h2>About Me</h2>
+              </header>
+              <span>The bullet points:</span>
+              <p>
+                I am someone who takes things apart to see how each part works.
+                I am a life-time learner with a Bachelor's degree in Philosophy
+                and a Master's degree of Eduction in Instructional Design. I
+                strive to learn how things work while also focusing on
+                functionality and getting work done. I'm not afraid to ask
+                questions but also not afraid to find the answers myself. I
+                respect the experience everyone, senior and junior, has to offer
+                and do my best to provide an eager ear to listen and confident
+                advice when appropriate.
+              </p>
+              <p>
+                My passion is to create value in the world. I am rewarded when I see my work
+                being used, appreciated and built upon. I one day wish to own my
+                own SaaS company that provides tools for small businesses. I
+                dream to hire and train young adults in software development and
+                mentor others seeking the same rewarding career I already have.
+              </p>
+              <ul className="actions">
+                <li>
+                  <Link
+                    to="/2019-04-24-how-i-got-started/"
+                    className="button next"
+                  >
+                    My Dev Story
+                  </Link>
+                </li>
+              </ul>
             </div>
-          )
-        })}
+          </section>
+        </div>
       </Layout>
-    )
+    );
   }
 }
 
-export default BlogIndex
-
-export const pageQuery = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-      edges {
-        node {
-          excerpt
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "MMMM DD, YYYY")
-            title
-          }
-        }
-      }
-    }
-  }
-`
+export default HomeIndex;

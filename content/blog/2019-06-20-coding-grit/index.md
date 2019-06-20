@@ -48,9 +48,10 @@ We've all started something being stoked about it and then when things got hard 
 You can keep motivation up if you have good... 👇
 4. **Attitudes & Beliefs**: If you don't think you can do something then you won't. Its that simple. You have to believe you can and have the attitude and confidence that you will. No one wants to help someone with a bad attitude, and people with bad attitudes usually don't ask for help anyways. Believe you can, do what you can, iterate on that and you WILL.
 But I have to admit, don't just be those people that talk to themselves in the mirror saying:    
-*> I can do it. I am great. I can achieve my goals.*
+> I can do it. I am great. I can achieve my goals.
+
 Instead make a plan. Tell yourself the plan. When things are planned then you fear less, you stress less, you know what to do. Have a plan.    
-*> I can learn JavaScript because I'm going to do A, B and C. If A doesn't work I'll ask Jared. If B doesn't work I'll try D. I have a plan!*
+> I can learn JavaScript because I'm going to do A, B and C. If A doesn't work I'll ask Jared. If B doesn't work I'll try D. I have a plan!
 
 ![In your head](https://media.giphy.com/media/41idZwB0PZYqY/giphy.gif)
 ## TRUE GRIT
@@ -79,7 +80,7 @@ Instead of **JUST** doing courses that run you thru coding concepts *(learn lett
 
 The hardest part of learning is that if you don't struggle enough then your brain doesn't think it is worth holding onto. So you forget that spoon fed information.
 
-*(I don't need to remember how to spell anymore because there are spell checkers on everything I touch. Too easy so my brain doesn't care to remember how the rules. I before E except some other time... 🤷‍♂️)*.
+> (I don't need to remember how to spell anymore because there are spell checkers on everything I touch. Too easy so my brain doesn't care to remember how the rules. I before E except some other time... 🤷‍♂️)*.
 
 Your brain needs to feel the pain of trying to make connections. That pain and time is what triggers the brain to hold on to what is going on. Its obviously important, our brain doesn't waste energy on anything unless it is important. We have to find a way to take learning to code and find that sweet spot of learning brain pains. Not too much or we'll give up. Not too little or we won't remember.
 

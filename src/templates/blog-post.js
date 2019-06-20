@@ -1,72 +1,36 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-
-import Bio from "../components/bio"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { rhythm, scale } from "../utils/typography"
+import React from 'react';
+import { graphql } from 'gatsby';
+import styled from 'styled-components';
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import { rhythm, scale } from '../utils/typography';
+import { NextPrevPosts } from '../components/NextPrevPosts';
 
 class BlogPostTemplate extends React.Component {
   render() {
-    const post = this.props.data.markdownRemark
-    const siteTitle = this.props.data.site.siteMetadata.title
-    const { previous, next } = this.props.pageContext
+    const post = this.props.data.markdownRemark;
+    const siteTitle = this.props.data.site.siteMetadata.title;
+    const { previous, next } = this.props.pageContext;
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title={post.frontmatter.title}
-          description={post.excerpt}
-        />
-        <h1>{post.frontmatter.title}</h1>
-        <p
-          style={{
-            ...scale(-1 / 5),
-            display: `block`,
-            marginBottom: rhythm(1),
-            marginTop: rhythm(-1),
-          }}
-        >
-          {post.frontmatter.date}
-        </p>
-        <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
-        <Bio />
+        <Wrapper>
+          <SEO title={post.frontmatter.title} description={post.excerpt} />
+          <h1>{post.frontmatter.title}</h1>
+          <Date css={{ ...scale(-1 / 5) }}>{post.frontmatter.date}</Date>
 
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
+          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+
+          <HR />
+
+          <NextPrevPosts next={next} previous={previous} />
+        </Wrapper>
       </Layout>
-    )
+    );
   }
 }
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -86,4 +50,25 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
+
+const Wrapper = styled.div`
+  padding: 1em 0 1em 0;
+  margin: 0 auto;
+  max-width: 65em;
+  width: calc(100% - 6em);
+  
+  h1,h2,h3,h4,h5 {
+    margin: 0;
+  }
+`;
+
+const HR = styled.hr`
+  border-bottom: solid 1px white;
+  margin-bottom: ${rhythm(1)};
+`;
+
+const Date = styled.p`
+  display: block;
+  margin: 10px 0 ${rhythm(1)} 0;
+`;
