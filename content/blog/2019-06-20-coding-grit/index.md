@@ -15,7 +15,7 @@ These coding course online are good. They help build the foundation a coder will
 
 Example: You are 4 or 5 years old and barely familiar that numbers are a thing. You've been told there are different numbers. So how do you learn math? 
 
-![Do Math](https://media.giphy.com/media/w4AYGsSA2rK00/giphy.gif)
+![Do Math](https://media.giphy.com/media/w4AYGsSA2rK00/giphy.gif)    
 Well you do some scaffolding. Scaffolding is the temporary structure built next to a building that helps works build up the building in safety. Its always right there, next to it and usually one level higher.
 
 Applied to learning it is guiding the bounds of your learning. Keeps your learning focused and always one step ahead to guide you to build on top of what you just learned.
@@ -87,7 +87,7 @@ Your brain needs to feel the pain of trying to make connections. That pain and t
 ## Mentored projects
 What fits that? **Mentored projects**. I know some coding course try and do projects in them but they lack the individualization. Most want you to make a portfolio site. Sorry but I did those and they were terrible and I never used them. I'm not even especially proud of them since I just kinda followed along with their scaffolding way of teaching me. Too easy, not relevant, and looks like everyone else that traced on the dotted lines of their course.
 
-![Mentor Mentee](./MentorMentee.gif)
+![Mentor Mentee](./MentorMentee.gif)   
 Try doing the same thing with a mentor. But keep in mind a mentor is there to guide, like the scaffolding, but only when you need a nudge. Most scaffolding is more like video game race tracks. They keep you on the track no matter how far off you try and go. Its the same thing each time you do it and there is no deviating from the course. Mentors are the opposite of that. You decide what you want to do, where you want to go. The mentor points you in the right direction. Helps you here and there. Gives you advice or clarification when you get stuck. You change your mind and want to go in another direction? The mentor can handle that.
 
 Currently I am helping a cousin learn web dev. We've gotten thru some basic JavaScript and super basic HTML. I gave him a JavaScript project to learn the basics. Just a choose your own adventure game in vanillaJS. Taught a few things about variables, comparisons, if statements, and confirm prompts. Let him figure it out. I gave him nudge here and there on our weekly meetups. Now he is doing a project to build a website, just html and css. He decides how it is designed, but it has to have links, images, text, 3 sections, etc. Gave him the criteria, which we could change, and let him go at it. In one meeting I showed him how to look at the html and css of other websites in the dev tools. Now he can see what others to do and he can try and mimic them. After we get this done we'll add in some vanillaJS to his site and get things interacting well.
