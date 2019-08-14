@@ -28,7 +28,7 @@ class HomeIndex extends React.Component {
 
         <div>
           <Link to="/blog">
-            <h2 className="blog-section-title">Recent Blog Posts</h2>
+            <h2 className="section-title">Recent Blog Posts</h2>
           </Link>
           {data && (
             <div className="recent-posts">

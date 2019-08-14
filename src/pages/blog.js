@@ -11,6 +11,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
+        <h1 className="section-title">{`\<Dev Blog \/\>`}</h1>
           {posts.map(({node}) => <PostExcerpt node={node} />)}
       </Layout>
     );

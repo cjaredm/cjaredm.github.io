@@ -1,4 +1,4 @@
-.blog-section-title {
+.section-title {
   display: block;
   text-align: center;
   margin: 20px auto;
@@ -14,12 +14,10 @@
 
 .recent-posts {
   margin: 0 30px;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  @media (max-width: 1499px) {
-    >:last-child {
-      grid-column-start: 1;
-      grid-column-end: -1;
-    }
+  display: flex;
+  flex-wrap: wrap;
+  div {
+    margin: 0 30px;
+    flex: 1;
   }
 }
