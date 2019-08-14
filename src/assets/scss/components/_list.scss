@@ -16,6 +16,10 @@ ol {
   }
 }
 
+ul.reset {
+  margin: 0;
+}
+
 ul {
   list-style: disc;
   margin: 0 0 _size(element-margin) 0;
@@ -144,11 +148,11 @@ ul {
 
       > .page {
         @include vendor(
-          'transition',
-          (
-            'background-color #{_duration(transition)} ease-in-out',
-            'color #{_duration(transition)} ease-in-out'
-          )
+                        'transition',
+                                (
+                                        'background-color #{_duration(transition)} ease-in-out',
+                                        'color #{_duration(transition)} ease-in-out'
+                                )
         );
         border-bottom: 0;
         display: inline-block;

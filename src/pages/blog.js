@@ -62,5 +62,5 @@ export function PostExcerpt({node}) {
       <small>{node.frontmatter.date}</small>
       <p>{node.excerpt}</p>
     </PostWrapper>
-  )
+  );
 }

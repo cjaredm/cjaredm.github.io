@@ -19,13 +19,13 @@
     @include vendor('align-items', 'center');
     @include vendor('display', 'flex');
     @include vendor(
-      'transition',
-      (
-        'transform 0.25s ease',
-        'opacity 0.25s ease',
-        'filter 1s ease',
-        '-webkit-filter 1s ease'
-      )
+                    'transition',
+                            (
+                                    'transform 0.25s ease',
+                                    'opacity 0.25s ease',
+                                    'filter 1s ease',
+                                    '-webkit-filter 1s ease'
+                            )
     );
     @include padding(4em, 4em);
     background-position: center;
@@ -46,7 +46,7 @@
     header {
       position: relative;
       z-index: 3;
-		border: 10px solid transparent;
+      border: 10px solid transparent;
     }
 
     h3 {
@@ -95,11 +95,12 @@
     }
 
     &:hover {
-		header {
-			background-color: rgba(255, 255, 255, 0.75);
-			border-radius: 5px;
-			border: 10px solid transparent;
-		}
+      header {
+        background-color: rgba(255, 255, 255, 0.75);
+        border-radius: 5px;
+        border: 10px solid transparent;
+      }
+
       &:before {
         opacity: 0;
       }

@@ -1,6 +1,6 @@
 import React from 'react';
-import { ContactIcons } from './ContactIcons'
-import styled from 'styled-components'
+import { ContactIcons } from './ContactIcons';
+import styled from 'styled-components';
 
 const Footer = props => (
   <footer id="footer">

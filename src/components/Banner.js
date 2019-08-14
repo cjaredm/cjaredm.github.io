@@ -10,22 +10,26 @@ const Banner = props => (
       <div className="content">
         <div>
           <p>
-            I focus on elegant, clean and efficient code, blah blah...
+            <strike>
+              I focus on elegant, clean and efficient code, blah blah...
+            </strike>
             <br />
-            I really focus on functionality, learning and getting things done.
+            Let's cut the BS. I balance functionality, learning and getting
+            things done.
           </p>
-          <ContactIcons />
+          <ContactIcons className="reset" />
         </div>
         <ul className="actions">
           <li>
             <a href="#one" className="button next scrolly">
-              View My Work
+              {' '}
+              View My Work{' '}
             </a>
           </li>
         </ul>
       </div>
     </div>
   </section>
-)
+);
 
 export default Banner

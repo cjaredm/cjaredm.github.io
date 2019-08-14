@@ -1,8 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
-import { Link } from 'gatsby'
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'gatsby';
 
-export function NextPrevPosts({previous, next}) {
+export function NextPrevPosts({ previous, next }) {
   return (
     <PrevNextWrapper>
       <li>
@@ -20,7 +20,7 @@ export function NextPrevPosts({previous, next}) {
         )}
       </li>
     </PrevNextWrapper>
-  )
+  );
 }
 
 const PrevNextWrapper = styled.ul`

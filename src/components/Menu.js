@@ -1,7 +1,7 @@
 /* eslint-disable */
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
+import React from 'react';
+import PropTypes from 'prop-types';
+import { Link } from 'gatsby';
 
 const Menu = props => (
   <nav id="menu">
@@ -29,27 +29,15 @@ const Menu = props => (
           </Link>
         </li>
       </ul>
-     {/* <ul className="actions vertical">
-        <li>
-          <a href="#" className="button special fit">
-            Get Started
-          </a>
-        </li>
-        <li>
-          <a href="#" className="button fit">
-            Log In
-          </a>
-        </li>
-      </ul>*/}
     </div>
     <a className="close" onClick={props.onToggleMenu}>
       Close
     </a>
   </nav>
-)
+);
 
 Menu.propTypes = {
   onToggleMenu: PropTypes.func,
-}
+};
 
-export default Menu
+export default Menu;

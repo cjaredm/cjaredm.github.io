@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import Banner from '../components/Banner';
-import { PostExcerpt } from './blog'
+import { PostExcerpt } from './blog';
 
 import MyShopImg from '../assets/images/MyShopAnalytics.png';
 import POSImg from '../assets/images/POSsystem.png';
@@ -14,7 +14,7 @@ import genericDeskImg from '../assets/images/simple-desk-computer.jpg';
 
 class HomeIndex extends React.Component {
   render() {
-    const {data} = this.props;
+    const { data } = this.props;
     return (
       <Layout>
         <Helmet
@@ -31,12 +31,9 @@ class HomeIndex extends React.Component {
           <BlogSectionTitle>Recent Blog Posts</BlogSectionTitle>
           {data && (
             <RecentPosts>
-              <HalfWidth>
-                <PostExcerpt node={data.allMarkdownRemark.edges[0].node} />
-              </HalfWidth>
-              <HalfWidth>
-                <PostExcerpt node={data.allMarkdownRemark.edges[1].node} />
-              </HalfWidth>
+              <PostExcerpt node={data.allMarkdownRemark.edges[0].node} />
+              <PostExcerpt node={data.allMarkdownRemark.edges[1].node} />
+              <PostExcerpt node={data.allMarkdownRemark.edges[2].node} />
             </RecentPosts>
           )}
         </div>
@@ -49,7 +46,7 @@ class HomeIndex extends React.Component {
                 <p>
                   Front and backend machine shop order, part and operation
                   tracker.
-                  <br/>
+                  <br />
                   Currently being used daily by Alphaeus Manufacturing LLC
                 </p>
               </header>
@@ -111,11 +108,12 @@ class HomeIndex extends React.Component {
                 advice when appropriate.
               </p>
               <p>
-                My passion is to create value in the world. I am rewarded when I see my work
-                being used, appreciated and built upon. I one day wish to own my
-                own SaaS company that provides tools for small businesses. I
-                dream to hire and train young adults in software development and
-                mentor others seeking the same rewarding career I already have.
+                My passion is to create value in the world. I am rewarded when I
+                see my work being used, appreciated and built upon. I one day
+                wish to own my own SaaS company that provides tools for small
+                businesses. I dream to hire and train young adults in software
+                development and mentor others seeking the same rewarding career
+                I already have.
               </p>
               <ul className="actions">
                 <li>
@@ -161,16 +159,26 @@ export const pageQuery = graphql`
 export default HomeIndex;
 
 const RecentPosts = styled.div`
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-`;
-
-const HalfWidth = styled.div`
-  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  @media (max-width: 1499px) {
+    >:last-child {
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+  }
 `;
 
 const BlogSectionTitle = styled.h2`
+  display: block;
   text-align: center;
   margin: 20px auto;
+  border: 0;
+  border-radius: 5px;
+  height: inherit;
+  line-height: inherit;
+  padding: 0 1.5em;
+  background-color: black;
+  color: white;
+  width: fit-content;
 `;

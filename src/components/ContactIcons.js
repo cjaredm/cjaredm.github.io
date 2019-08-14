@@ -1,17 +1,25 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-export function ContactIcons() {
+export function ContactIcons({ className }) {
   return (
-    <ul className="icons">
+    <ul className={`icons ${className}`}>
       <li>
-        <A href="https://twitter.com/cjaredm" className="icon alt fa-twitter" title="Twitter">
-          <span className="label">Twitter</span>
+        <A
+          href="https://twitter.com/cjaredm"
+          className="icon alt fa-twitter"
+          title="Twitter"
+        >
+          <span className="label">Twitter</span>{' '}
         </A>
       </li>
       <li>
-        <A href="https://github.com/cjaredm" className="icon alt fa-github" title="GitHub">
-          <span className="label">GitHub</span>
+        <A
+          href="https://github.com/cjaredm"
+          className="icon alt fa-github"
+          title="GitHub"
+        >
+          <span className="label">GitHub</span>{' '}
         </A>
       </li>
       <li>
@@ -20,13 +28,18 @@ export function ContactIcons() {
           className="icon alt fa-linkedin"
           title="LinkedIn"
         >
-          <span className="label">LinkedIn</span>
+          {' '}
+          <span className="label">LinkedIn</span>{' '}
         </A>
       </li>
 
       <li>
-        <A href="mailto:cjaredm@protonmail.com" className="icon alt fa-envelope" title="cjaredm@protonmail.com">
-          <span className="label">Email</span>
+        <A
+          href="mailto:cjaredm@protonmail.com"
+          className="icon alt fa-envelope"
+          title="cjaredm@protonmail.com"
+        >
+          <span className="label">Email</span>{' '}
         </A>
       </li>
     </ul>
