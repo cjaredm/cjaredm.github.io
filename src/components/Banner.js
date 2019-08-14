@@ -8,11 +8,14 @@ const Banner = props => (
         <h1>I'm Jared, a Frontend Developer</h1>
       </header>
       <div className="content">
-        <p>
-          I focus on elegant, clean and efficient code, blah blah...
-          <br />
-          I really focus on functionality, learning and getting things done.
-        </p>
+        <div>
+          <p>
+            I focus on elegant, clean and efficient code, blah blah...
+            <br />
+            I really focus on functionality, learning and getting things done.
+          </p>
+          <ContactIcons />
+        </div>
         <ul className="actions">
           <li>
             <a href="#one" className="button next scrolly">

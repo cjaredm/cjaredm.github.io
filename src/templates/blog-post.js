@@ -57,9 +57,17 @@ const Wrapper = styled.div`
   margin: 0 auto;
   max-width: 65em;
   width: calc(100% - 6em);
-  
-  h1,h2,h3,h4,h5 {
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
     margin: 0;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
   }
 `;
 

@@ -29,11 +29,6 @@ export function ContactIcons() {
           <span className="label">Email</span>
         </A>
       </li>
-      <li>
-        <A href="https://www.google.com/maps/place/St.+George,+UT" className="icon alt fa-home" title="St. George, UT">
-          <span className="label">Location</span>
-        </A>
-      </li>
     </ul>
   );
 }

@@ -62,7 +62,7 @@ Grit is a term used in the educational system in reference to:
 
 > ...individuals who demonstrate perseverance to accomplish educational goals in the face of challenges and setbacks.
 
-[Credit InstructionalDesign.com]([http://www.instructionaldesign.org/concepts/grit/](http://www.instructionaldesign.org/concepts/grit/))
+[Credit: InstructionalDesign.com]([http://www.instructionaldesign.org/concepts/grit/](http://www.instructionaldesign.org/concepts/grit/))
 
 Guess what happens when you try and learn something you've never done before? You're going to fail... a lot. Is that bad? *Nope*. Are you not smart because you failed? *Nope*. Can you still be successful even though you've made mistakes? *Hell yeah!*
 
@@ -80,7 +80,7 @@ Instead of **JUST** doing courses that run you thru coding concepts *(learn lett
 
 The hardest part of learning is that if you don't struggle enough then your brain doesn't think it is worth holding onto. So you forget that spoon fed information.
 
-> (I don't need to remember how to spell anymore because there are spell checkers on everything I touch. Too easy so my brain doesn't care to remember how the rules. I before E except some other time... 🤷‍♂️)*.
+> (I don't need to remember how to spell anymore because there are spell checkers on everything I touch. Too easy so my brain doesn't care to remember the rules. `I` before `E` except some other time... 🤷‍♂️)*.
 
 Your brain needs to feel the pain of trying to make connections. That pain and time is what triggers the brain to hold on to what is going on. Its obviously important, our brain doesn't waste energy on anything unless it is important. We have to find a way to take learning to code and find that sweet spot of learning brain pains. Not too much or we'll give up. Not too little or we won't remember.
 

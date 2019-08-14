@@ -11,21 +11,7 @@ class BlogIndex extends React.Component {
 
     return (
       <Layout location={this.props.location} title={siteTitle}>
-          {posts.map(({ node }) => {
-            console.log(node);
-            const title = node.frontmatter.title || node.fields.slug;
-            return (
-              <PostWrapper key={node.fields.slug}>
-                <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
-                  <header className="major">
-                    <h2>{title}</h2>
-                  </header>
-                </Link>
-                <small>{node.frontmatter.date}</small>
-                <p>{node.excerpt}</p>
-              </PostWrapper>
-            );
-          })}
+          {posts.map(({node}) => <PostExcerpt node={node} />)}
       </Layout>
     );
   }
@@ -63,3 +49,18 @@ const PostWrapper = styled.div`
   max-width: 65em;
   width: calc(100% - 6em);
 `;
+
+export function PostExcerpt({node}) {
+  const title = node.frontmatter.title || node.fields.slug;
+  return (
+    <PostWrapper key={node.fields.slug}>
+      <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+        <header className="major">
+          <h2>{title}</h2>
+        </header>
+      </Link>
+      <small>{node.frontmatter.date}</small>
+      <p>{node.excerpt}</p>
+    </PostWrapper>
+  )
+}

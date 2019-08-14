@@ -1,16 +1,20 @@
 /* eslint-disable */
 import React from 'react';
-import { Link } from 'gatsby';
+import { graphql, Link } from 'gatsby';
+import styled from 'styled-components';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import Banner from '../components/Banner';
+import { PostExcerpt } from './blog'
 
-import pic01 from '../assets/images/MyShopAnalytics.png';
-import pic02 from '../assets/images/pic02.jpg';
-import pic03 from '../assets/images/pic03.jpg';
+import MyShopImg from '../assets/images/MyShopAnalytics.png';
+import POSImg from '../assets/images/POSsystem.png';
+import movieClapper from '../assets/images/movie-clapper.jpg';
+import genericDeskImg from '../assets/images/simple-desk-computer.jpg';
 
 class HomeIndex extends React.Component {
   render() {
+    const {data} = this.props;
     return (
       <Layout>
         <Helmet
@@ -23,21 +27,36 @@ class HomeIndex extends React.Component {
 
         <Banner />
 
+        <div>
+          <BlogSectionTitle>Recent Blog Posts</BlogSectionTitle>
+          {data && (
+            <RecentPosts>
+              <HalfWidth>
+                <PostExcerpt node={data.allMarkdownRemark.edges[0].node} />
+              </HalfWidth>
+              <HalfWidth>
+                <PostExcerpt node={data.allMarkdownRemark.edges[1].node} />
+              </HalfWidth>
+            </RecentPosts>
+          )}
+        </div>
+
         <div id="main">
           <section id="one" className="tiles">
-            <article style={{ backgroundImage: `url(${pic01})` }}>
+            <article style={{ backgroundImage: `url(${MyShopImg})` }}>
               <header className="major">
                 <h3>MyShopAnalytics.com</h3>
                 <p>
                   Front and backend machine shop order, part and operation
-                  tracker currently being used daily by Alphaeus Manufacturing
-                  LLC
+                  tracker.
+                  <br/>
+                  Currently being used daily by Alphaeus Manufacturing LLC
                 </p>
               </header>
               <Link to="/my-shop-analytics" className="link primary" />
             </article>
 
-            <article style={{ backgroundImage: `url(${pic02})` }}>
+            <article style={{ backgroundImage: `url(${POSImg})` }}>
               <header className="major">
                 <h3>Runway Fashion POS</h3>
                 <p>
@@ -49,7 +68,7 @@ class HomeIndex extends React.Component {
               <Link to="/portfolio/pos-system" className="link primary" />
             </article>
 
-            <article style={{ backgroundImage: `url(${pic03})` }}>
+            <article style={{ backgroundImage: `url(${movieClapper})` }}>
               <header className="major">
                 <h3>In Theaters Soon!</h3>
                 <p>
@@ -61,7 +80,7 @@ class HomeIndex extends React.Component {
               <Link to="/portfolio/in-theaters-soon" className="link primary" />
             </article>
 
-            <article style={{ backgroundImage: `url(${pic03})` }}>
+            <article style={{ backgroundImage: `url(${genericDeskImg})` }}>
               <header className="major">
                 <h3>Dev Blog</h3>
                 <p>
@@ -116,4 +135,42 @@ class HomeIndex extends React.Component {
   }
 }
 
+export const pageQuery = graphql`
+  query {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      edges {
+        node {
+          excerpt
+          fields {
+            slug
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+          }
+        }
+      }
+    }
+  }
+`;
 export default HomeIndex;
+
+const RecentPosts = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+`;
+
+const HalfWidth = styled.div`
+  width: 50%;
+`;
+
+const BlogSectionTitle = styled.h2`
+  text-align: center;
+  margin: 20px auto;
+`;
