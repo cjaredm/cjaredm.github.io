@@ -27,7 +27,9 @@ class HomeIndex extends React.Component {
         <Banner />
 
         <div>
-          <h2 className="blog-section-title">Recent Blog Posts</h2>
+          <Link to="/blog">
+            <h2 className="blog-section-title">Recent Blog Posts</h2>
+          </Link>
           {data && (
             <div className="recent-posts">
               <PostExcerpt node={data.allMarkdownRemark.edges[0].node} />

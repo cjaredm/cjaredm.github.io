@@ -13,6 +13,7 @@
 }
 
 .recent-posts {
+  margin: 0 30px;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
   @media (max-width: 1499px) {
