@@ -1,7 +1,6 @@
 /* eslint-disable */
 import React from 'react';
 import { graphql, Link } from 'gatsby';
-import styled from 'styled-components';
 import Helmet from 'react-helmet';
 import Layout from '../components/layout';
 import Banner from '../components/Banner';
@@ -28,13 +27,13 @@ class HomeIndex extends React.Component {
         <Banner />
 
         <div>
-          <BlogSectionTitle>Recent Blog Posts</BlogSectionTitle>
+          <h2 className="blog-section-title">Recent Blog Posts</h2>
           {data && (
-            <RecentPosts>
+            <div className="recent-posts">
               <PostExcerpt node={data.allMarkdownRemark.edges[0].node} />
               <PostExcerpt node={data.allMarkdownRemark.edges[1].node} />
               <PostExcerpt node={data.allMarkdownRemark.edges[2].node} />
-            </RecentPosts>
+            </div>
           )}
         </div>
 
@@ -157,28 +156,3 @@ export const pageQuery = graphql`
   }
 `;
 export default HomeIndex;
-
-const RecentPosts = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
-  @media (max-width: 1499px) {
-    >:last-child {
-      grid-column-start: 1;
-      grid-column-end: -1;
-    }
-  }
-`;
-
-const BlogSectionTitle = styled.h2`
-  display: block;
-  text-align: center;
-  margin: 20px auto;
-  border: 0;
-  border-radius: 5px;
-  height: inherit;
-  line-height: inherit;
-  padding: 0 1.5em;
-  background-color: black;
-  color: white;
-  width: fit-content;
-`;
