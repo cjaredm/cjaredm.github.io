@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import styled from 'styled-components';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
-import { rhythm, scale } from '../utils/typography';
+import { rhythm } from '../utils/typography';
 import { NextPrevPosts } from '../components/NextPrevPosts';
 
 class BlogPostTemplate extends React.Component {
@@ -17,7 +17,7 @@ class BlogPostTemplate extends React.Component {
         <Wrapper>
           <SEO title={post.frontmatter.title} description={post.excerpt} />
           <h1>{post.frontmatter.title}</h1>
-          <Date css={{ ...scale(-1 / 5) }}>{post.frontmatter.date}</Date>
+          <Date>{post.frontmatter.date}</Date>
 
           <div dangerouslySetInnerHTML={{ __html: post.html }} />
 
@@ -73,7 +73,6 @@ const Wrapper = styled.div`
 
 const HR = styled.hr`
   border-bottom: solid 1px white;
-  margin-bottom: ${rhythm(1)};
 `;
 
 const Date = styled.p`
