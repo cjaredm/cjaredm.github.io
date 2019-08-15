@@ -1,9 +1,10 @@
 import React from 'react';
 import { ContactIcons } from './ContactIcons';
 import profile from '../assets/images/profile.jpeg';
+import styled from 'styled-components'
 
 const Banner = props => (
-  <section id="banner" className="major">
+  <Section img={props.img} id="banner" className="major">
     <div className="inner">
       <div className="banner-wrapper">
         <div className="profile-wrapper">
@@ -38,7 +39,12 @@ const Banner = props => (
         </div>
       </div>
     </div>
-  </section>
+  </Section>
 );
 
 export default Banner;
+
+const Section = styled.section`
+  background: url(${({img}) => img}) no-repeat center center fixed;
+  background-size: cover;
+`;

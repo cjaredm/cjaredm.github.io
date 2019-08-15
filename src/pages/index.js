@@ -6,6 +6,7 @@ import Layout from '../components/layout';
 import Banner from '../components/Banner';
 import { PostExcerpt } from './blog';
 
+import hero from '../assets/images/backend-frontend.jpg';
 import MyShopImg from '../assets/images/MyShopAnalytics.png';
 import POSImg from '../assets/images/POSsystem.png';
 import movieClapper from '../assets/images/movie-clapper.jpg';
@@ -24,7 +25,7 @@ class HomeIndex extends React.Component {
           ]}
         />
 
-        <Banner />
+        <Banner img={hero} />
 
         <div>
           <Link to="/blog">
@@ -51,7 +52,7 @@ class HomeIndex extends React.Component {
                   Currently being used daily by Alphaeus Manufacturing LLC
                 </p>
               </header>
-              <Link to="/my-shop-analytics" className="link primary" />
+              <Link to="portfolio/my-shop-analytics" className="link primary" />
             </article>
 
             <article style={{ backgroundImage: `url(${POSImg})` }}>
@@ -96,17 +97,17 @@ class HomeIndex extends React.Component {
               <header className="major">
                 <h2>About Me</h2>
               </header>
-              <span>The bullet points:</span>
+              <p>
+                Thanks for visiting! Don't be a stranger, feel free to reach out and say hello!
+                <br/>
+                <strong>cjaredm@protonmail.com</strong>
+              </p>
               <p>
                 I am someone who takes things apart to see how each part works.
                 I am a life-time learner with a Bachelor's degree in Philosophy
                 and a Master's degree of Eduction in Instructional Design. I
                 strive to learn how things work while also focusing on
-                functionality and getting work done. I'm not afraid to ask
-                questions but also not afraid to find the answers myself. I
-                respect the experience everyone, senior and junior, has to offer
-                and do my best to provide an eager ear to listen and confident
-                advice when appropriate.
+                functionality and getting work done.
               </p>
               <p>
                 My passion is to create value in the world. I am rewarded when I

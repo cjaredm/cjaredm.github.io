@@ -8,7 +8,6 @@
 
 #banner {
   @include vendor('align-items', 'center');
-  @include vendor('background-image', 'url("../images/backend-frontend.jpg")');
   @include vendor('display', 'flex');
   @include padding(4em, 0, (2em, 0, 0, 0));
   background-attachment: fixed;
@@ -46,13 +45,13 @@
 
   > .inner {
     @include vendor(
-                    'transition',
-                            (
-                                    'opacity 1.5s ease',
-                                    'transform 0.5s ease-out',
-                                    'filter 0.5s ease',
-                                    '-webkit-filter 0.5s ease'
-                            )
+      'transition',
+      (
+        'opacity 1.5s ease',
+        'transform 0.5s ease-out',
+        'filter 0.5s ease',
+        '-webkit-filter 0.5s ease'
+      )
     );
     padding: 0 !important;
     position: relative;
@@ -99,7 +98,7 @@
 
   &.major {
     height: auto;
-    min-height: 30em;
+    min-height: 700px;
 
     &.alt {
       opacity: 0.75;
