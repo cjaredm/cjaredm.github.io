@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import Layout from '../../components/layout';
 import Hero from '../../components/Hero';
-import { TechStack } from '../../components/portfolio';
+import { TechStack } from '../../components/TechStack';
 import movieClapper from '../../assets/images/movie-clapper.jpg';
 
 const InTheatersSoon = props => (

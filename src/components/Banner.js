@@ -8,7 +8,7 @@ const Banner = props => (
     <div className="inner">
       <div className="banner-wrapper">
         <div className="profile-wrapper">
-          <img className="profile-picture" src={profile} alt="profile picture" />
+          <img className="profile-picture" src={profile} alt="profile" />
         </div>
 
         <div>

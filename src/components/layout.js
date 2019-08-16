@@ -3,12 +3,14 @@ import Header from './Header';
 import Menu from './Menu';
 import Footer from './Footer';
 import '../assets/scss/main.scss';
+import Modal from './Modal'
 
 class Layout extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       isMenuVisible: false,
+      isModalVisible: false,
       loading: 'is-loading',
     };
     this.handleToggleMenu = this.handleToggleMenu.bind(this);
@@ -32,6 +34,8 @@ class Layout extends React.Component {
     });
   }
 
+  setModal = (modal) => this.setState({modal});
+
   render() {
     const { children } = this.props;
 
@@ -39,12 +43,17 @@ class Layout extends React.Component {
       <div
         className={`body ${this.state.loading} ${
           this.state.isMenuVisible ? 'is-menu-visible' : ''
+        } ${
+          this.state.modal ? 'modal-is-visible' : ''
         }`}
       >
         <div id="wrapper">
-          <Header onToggleMenu={this.handleToggleMenu} /> {children} <Footer />
+          <Header onToggleMenu={this.handleToggleMenu} />
+          {typeof children === 'function' ? children({setModal: this.setModal}) : children}
+          <Footer />
         </div>
         <Menu onToggleMenu={this.handleToggleMenu} />
+        <Modal close={() => this.setModal(null)} children={this.state.modal} />
       </div>
     );
   }

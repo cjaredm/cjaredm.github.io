@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import Layout from '../../components/layout';
 import Hero from '../../components/Hero';
 import genericDeskImg from '../../assets/images/simple-desk-computer.jpg';
-import { TechStack } from '../../components/portfolio';
+import { TechStack } from '../../components/TechStack';
 
 const DevBlog = props => (
   <Layout>

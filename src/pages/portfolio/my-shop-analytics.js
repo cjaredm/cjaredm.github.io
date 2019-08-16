@@ -3,7 +3,7 @@ import Helmet from 'react-helmet';
 import styled from 'styled-components';
 import Layout from '../../components/layout';
 import Hero from '../../components/Hero';
-import { TechStack } from '../../components/portfolio';
+import { TechStack } from '../../components/TechStack';
 import myshop from '../../assets/images/MyShopAnalytics.png';
 
 const MyShopAnalytics = props => (
