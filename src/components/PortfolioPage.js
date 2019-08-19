@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Layout from './layout';
 import Hero from './Hero';
 import { TechStack } from './TechStack';
-import Modal from './Modal';
+import { Carousel } from './Carousel'
 
 export function PortfolioPage({
   helmetProps,
@@ -13,7 +13,6 @@ export function PortfolioPage({
   what,
   screenshots,
 }) {
-  const [image, setModalImage] = React.useState(null);
   return (
     <Layout>
       {({ setModal }) => (
@@ -52,10 +51,10 @@ export function PortfolioPage({
 
                 <div className="box alt">
                   <div className="grid-wrapper">
-                    {screenshots.map(img => (
+                    {screenshots.map((img, i) => (
                       <div className="col-4">
                         <span className="image fit">
-                          <img src={img} alt="screen shot" onClick={() => setModal(<Image src={img} alt="screen shot" />)} />
+                          <img src={img} alt="screen shot" onClick={() => setModal(<Images images={screenshots} selected={i}/>)} />
                         </span>
                       </div>
                     ))}
@@ -77,3 +76,9 @@ const Container = styled.section`
 const Image = styled.img`
   display: flex;
 `;
+
+function Images({images, selected}) {
+  return (
+    <Carousel items={images.map(img => <Image src={img} alt="screen shot" />)} indexSelected={selected} />
+  )
+}

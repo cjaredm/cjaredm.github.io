@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Modal = ({children, close}) => children ? (
-  <Wrapper id="modal" onClick={close}>
+  <Wrapper id="modal">
     <div className="inner">
       {children}
     </div>

@@ -1,13 +1,16 @@
 import React from 'react';
-import { PortfolioPage } from '../../components/PortfolioPage'
+import { PortfolioPage } from '../../components/PortfolioPage';
 import POSImg from '../../assets/images/POSsystem.png';
 
 const POSSystem = props => (
   <PortfolioPage
-    helmetProps={{title:'POS System', description: 'Description of building POS System'}}
+    helmetProps={{
+      title: 'POS System',
+      description: 'Description of building POS System',
+    }}
     heroProps={{
       img: POSImg,
-      title: "POS System",
+      title: 'POS System',
       content: `Clothing resellers have had a hard time getting point of sale
       systems to work with their particular business model. They don't only
       sell clothing, they also buy it from their customers, and from other
@@ -26,13 +29,13 @@ const POSSystem = props => (
       'github',
       'styledComponents',
     ]}
-    what={(
+    what={
       <>
         <p>
-          Resellers buy and sell with their customers and currently there is
-          no efficient method that works with the business model. Some
-          consignment POS systems work but only so much. They all fall short
-          and are out of date.
+          Resellers buy and sell with their customers and currently there is no
+          efficient method that works with the business model. Some consignment
+          POS systems work but only so much. They all fall short and are out of
+          date.
         </p>
         <p>
           How do I know this? My neighbor owns over 9 clothing resell
@@ -43,12 +46,12 @@ const POSSystem = props => (
         </p>
         <p>
           After some meetings to collect the exact usage of their current
-          software, a wish-list of bug fixes and new features I decided to
-          build it. I reached out to a friend to join me since it is going to
-          be quick the extensive project. We've built prototypes in InVision
-          and had these MVP ideas approved. We currently are in development of
-          the buying process flow and have it 90% working (excluding actual
-          customer and clothing data)!
+          software, a wish-list of bug fixes and new features I decided to build
+          it. I reached out to a friend to join me since it is going to be quick
+          the extensive project. We've built prototypes in InVision and had
+          these MVP ideas approved. We currently are in development of the
+          buying process flow and have it 90% working (excluding actual customer
+          and clothing data)!
         </p>
         <p>
           Next steps are to resolve our Buying flow and integrate this with
@@ -58,7 +61,7 @@ const POSSystem = props => (
           use while we develop the selling process. Wish us luck!
         </p>
       </>
-    )}
+    }
   />
 );
 

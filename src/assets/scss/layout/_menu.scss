@@ -191,6 +191,7 @@ body.is-ie {
       @include vendor('transform', 'none');
       opacity: 1;
       visibility: visible;
+      height: inherit;
     }
   }
 
