@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Layout from './layout';
 import Hero from './Hero';
 import { TechStack } from './TechStack';
-import { Carousel } from './Carousel'
+import { Carousel } from './Carousel';
 
 export function PortfolioPage({
   helmetProps,
@@ -12,6 +12,7 @@ export function PortfolioPage({
   techs,
   what,
   screenshots,
+  codeLink,
 }) {
   return (
     <Layout>
@@ -29,6 +30,7 @@ export function PortfolioPage({
               <div className="inner">
                 <header className="major">
                   <h2>Tech Stack</h2>
+                  {codeLink && <a href={codeLink}>See the code!</a>}
                 </header>
                 <TechStack techs={techs} />
               </div>
@@ -43,25 +45,35 @@ export function PortfolioPage({
               </div>
             </Container>
 
-            <Container id="three" color="#8d82c4">
-              <div className="inner">
-                <header className="major">
-                  <h2>Screenshots</h2>
-                </header>
+            {screenshots && (
+              <Container id="three" color="#8d82c4">
+                <div className="inner">
+                  <header className="major">
+                    <h2>Screenshots</h2>
+                  </header>
 
-                <div className="box alt">
-                  <div className="grid-wrapper">
-                    {screenshots.map((img, i) => (
-                      <div className="col-4">
-                        <span className="image fit">
-                          <img src={img} alt="screen shot" onClick={() => setModal(<Images images={screenshots} selected={i}/>)} />
-                        </span>
-                      </div>
-                    ))}
+                  <div className="box alt">
+                    <div className="grid-wrapper">
+                      {screenshots.map((img, i) => (
+                        <div className="col-4" key={img}>
+                          <span className="image fit">
+                            <img
+                              src={img}
+                              alt="screen shot"
+                              onClick={() =>
+                                setModal(
+                                  <Images images={screenshots} selected={i} />
+                                )
+                              }
+                            />
+                          </span>
+                        </div>
+                      ))}
+                    </div>
                   </div>
                 </div>
-              </div>
-            </Container>
+              </Container>
+            )}
           </div>
         </>
       )}
@@ -77,8 +89,13 @@ const Image = styled.img`
   display: flex;
 `;
 
-function Images({images, selected}) {
+function Images({ images, selected }) {
   return (
-    <Carousel items={images.map(img => <Image src={img} alt="screen shot" />)} indexSelected={selected} />
-  )
+    <Carousel
+      items={images.map(img => (
+        <Image src={img} alt="screen shot" key={img} />
+      ))}
+      indexSelected={selected}
+    />
+  );
 }

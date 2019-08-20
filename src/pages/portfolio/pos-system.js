@@ -1,6 +1,6 @@
 import React from 'react';
 import { PortfolioPage } from '../../components/PortfolioPage';
-import POSImg from '../../assets/images/POSsystem.png';
+import POSImg from '../../assets/images/portfolio/pos/POSsystem.png';
 
 const POSSystem = props => (
   <PortfolioPage

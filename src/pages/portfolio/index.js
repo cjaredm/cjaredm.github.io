@@ -6,7 +6,7 @@ import Hero from '../../components/Hero';
 
 import pic09 from '../../assets/images/pic09.jpg';
 import pic10 from '../../assets/images/pic10.jpg';
-import myshopanalytics from '../../assets/images/MyShopAnalytics.png'
+import myshopanalytics from '../../assets/images/portfolio/myshop/MyShopAnalytics.png'
 
 const Portfolio = props => (
   <Layout>
