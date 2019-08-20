@@ -1,5 +1,5 @@
 import React from 'react';
-import movieClapper from '../../assets/images/movie-clapper.jpg';
+import movieClapper from '../../assets/images/portfolio/intheaters/movie-clapper.jpg';
 import screenshots from '../../assets/images/portfolio/intheaters/index';
 import { PortfolioPage } from '../../components/PortfolioPage';
 

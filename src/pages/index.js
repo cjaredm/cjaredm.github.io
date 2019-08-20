@@ -9,7 +9,7 @@ import { PostExcerpt } from './blog';
 import hero from '../assets/images/backend-frontend.jpg';
 import MyShopImg from '../assets/images/portfolio/myshop/MyShopAnalytics.png';
 import POSImg from '../assets/images/portfolio/pos/POSsystem.png';
-import movieClapper from '../assets/images/movie-clapper.jpg';
+import movieClapper from '../assets/images/portfolio/intheaters/movie-clapper.jpg';
 import genericDeskImg from '../assets/images/simple-desk-computer.jpg';
 
 class HomeIndex extends React.Component {

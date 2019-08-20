@@ -27,10 +27,8 @@ const Container = styled.div`
   height: inherit;
   display: flex;
   img {
-    width: 100%;
-    max-width: 800px;
-    max-height: 800px;
-    height: auto;
+    max-width: 90%;
+    max-height: 90%;
     margin: 0 auto;
     align-self: center;
   }
@@ -41,6 +39,7 @@ const LBtn = styled.button`
   top: 50%;
   left: 0;
   transform: translateY(-50%);
+  background-color: white;
 `;
 
 const RBtn = styled.button`
@@ -48,4 +47,5 @@ const RBtn = styled.button`
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+  background-color: white;
 `;

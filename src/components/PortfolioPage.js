@@ -60,6 +60,7 @@ export function PortfolioPage({
                             <img
                               src={img}
                               alt="screen shot"
+                              style={{cursor: 'pointer'}}
                               onClick={() =>
                                 setModal(
                                   <Images images={screenshots} selected={i} />
