@@ -1,6 +1,7 @@
 import React from 'react';
 import { PortfolioPage } from '../../components/PortfolioPage';
 import POSImg from '../../assets/images/portfolio/pos/POSsystem.png';
+import screenshots from '../../assets/images/portfolio/pos/index';
 
 const POSSystem = props => (
   <PortfolioPage
@@ -18,10 +19,11 @@ const POSSystem = props => (
       almost all stores misuse them or hack them into a mangled mess. This
       will solve all reseller POS problems. You're welcome!`,
     }}
-    screenshots={[POSImg]}
+    screenshots={screenshots}
     techs={[
       'reactjs',
       'reactnative',
+      'typescript',
       'apollo',
       'prisma',
       'graphql',

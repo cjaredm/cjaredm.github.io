@@ -20,6 +20,9 @@ const TECH_NAME = {
   apollo: 'apollo',
   node: 'node',
   styledComponents: 'styledComponents',
+  flow: 'flow',
+  typescript: 'typescript',
+  redux: 'redux',
 };
 
 const TECHS = {
@@ -85,6 +88,21 @@ const TECHS = {
       'https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/240/apple/198/nail-polish_1f485.png',
     label: 'Styled-Components',
     href: 'https://www.styled-components.com/',
+  },
+  [TECH_NAME.flow]: {
+    img: 'https://avatars2.githubusercontent.com/u/15352388?s=400&v=4',
+    label: 'Flow',
+    href: 'https://flow.org/',
+  },
+  [TECH_NAME.typescript]: {
+    img: 'https://raw.githubusercontent.com/remojansen/logo.ts/master/ts.png',
+    label: 'TypeScript',
+    href: 'https://www.typescriptlang.org/',
+  },
+  [TECH_NAME.redux]: {
+    img: 'https://redux.js.org/img/redux.svg',
+    label: 'Redux',
+    href: 'https://redux.js.org/',
   },
 };
 
