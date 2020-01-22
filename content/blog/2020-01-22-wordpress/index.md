@@ -1,9 +1,7 @@
 ---
-title: Hello World
+title: Wordpress?
 date: "2020-01-22T16:12:03.284Z"
 ---
-
-# Wordpress?
 
 ## Why even talk about it?
 
