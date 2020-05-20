@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[cJaredm Dev Blog]]></title><description><![CDATA[Portfolio and Dev Blog for cJaredm]]></description><link>https://cjaredm.com</link><generator>RSS for Node</generator><lastBuildDate>Mon, 27 Jan 2020 02:47:45 GMT</lastBuildDate><item><title><![CDATA[Wordpress?]]></title><description><![CDATA[Why even talk about it? I just started a new job that is much different than my previous. I was working in 3 codebases with mostly the same…]]></description><link>https://cjaredm.com/2020-01-22-wordpress/</link><guid isPermaLink="false">https://cjaredm.com/2020-01-22-wordpress/</guid><pubDate>Wed, 22 Jan 2020 16:12:03 GMT</pubDate><content:encoded>&lt;h2&gt;Why even talk about it?&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[cJaredm Dev Blog]]></title><description><![CDATA[Portfolio and Dev Blog for cJaredm]]></description><link>https://cjaredm.com</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 20 May 2020 04:18:47 GMT</lastBuildDate><item><title><![CDATA[Wordpress?]]></title><description><![CDATA[Why even talk about it? I just started a new job that is much different than my previous. I was working in 3 codebases with mostly the same…]]></description><link>https://cjaredm.com/2020-01-22-wordpress/</link><guid isPermaLink="false">https://cjaredm.com/2020-01-22-wordpress/</guid><pubDate>Wed, 22 Jan 2020 16:12:03 GMT</pubDate><content:encoded>&lt;h2&gt;Why even talk about it?&lt;/h2&gt;
 &lt;p&gt;I just started a new job that is much different than my previous. I was working in 3 codebases with &lt;em&gt;mostly&lt;/em&gt; the same tech stack; now I am working on a plethora of projects in different codebases. Primary environment we work in is Wordpress. Never worked in that before.&lt;/p&gt;
 &lt;p&gt;I’ve had to come to some realizations on this because I never really wanted to work in Wordpress before, but I also never really understood Wordpress as a developer.&lt;/p&gt;
 &lt;ol&gt;
@@ -168,7 +168,7 @@ provide the most profits, what parts are loosing them money, etc.&lt;/p&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/898faa7dec1b1fa978fc2a5422b9d515/d248c/Job_Tracker.png&quot;
+    href=&quot;/static/898faa7dec1b1fa978fc2a5422b9d515/4d383/Job_Tracker.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -180,20 +180,20 @@ provide the most profits, what parts are loosing them money, etc.&lt;/p&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 72.13389121338912%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsTAAALEwEAmpwYAAACJElEQVQoz3VRa4vTQBTN/4dlpV8EKyKCCCKKHxZRse52wQ+ya5M2TTOTxySZyfvRpEm6pYuNp4nryooHZrhz7zn3XO5IlmXphBJqEEJnsqxq2mQyubg4nynK2Yezj58/zWRlev718nKqKMr11RUlhOiE9LdUlkUceknsxVFYpWmb57u6brY35fG6wSk2ddlu63aLTNW0VV3n1TqrirKupC5/1/mnXTrqlBfdaNyNnxzGT1+5u5Nl/UjbPDOat97utbMdaZvT1eaxvn/JlyfszYn9/rn4Im3WfpFYZe5UsRetiK9pmWkZIp7+UFXGqYi+zzWF2maYfpuvrlcWiwPNo6pLnURIWb5OsiJO8jjNTIcR03SFCDin+oq7TiC4QQmzzCQMLQS2GQUhM22LGnEYSWmWRVEUx3GSJLZtG4YhhMjznDEnSVHMbMb8ICiKAhnORZIm2LFpmmEYSiiDjSz0jLFezD3Pw+aZ4xyDmazrxBdCxl8sl0EQQAzaUQxDrH14DGLOOZK4h3HQGgLMggAcJO+dUYYADwx/53wE/tnjHAxZmaOapdlCValhDOJ75wdiePq+jwznHrrYtuUwBnNd11F9OPa/zhiXUpSjNE1RxAht21ZV1TQN5jd7/BZTEPtO2DZiOGNPijJHL8SLxQKe+9vbrgdaDHyMIKGT4ziu68IEnojRBR2hH76Q99jv94fDAeK6rt0e4EiH/+Bnjz9Bd4e/Ob8AUy7mkLJwVUQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 72.2972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAIAAACgpqunAAAACXBIWXMAAAsTAAALEwEAmpwYAAACJElEQVQoz3VRa4vTQBTN/4dlpV8EKyKCCCKKHxZRse52wQ+ya5M2TTOTxySZyfvRpEm6pYuNp4nryooHZrhz7zn3XO5IlmXphBJqEEJnsqxq2mQyubg4nynK2Yezj58/zWRlev718nKqKMr11RUlhOiE9LdUlkUceknsxVFYpWmb57u6brY35fG6wSk2ddlu63aLTNW0VV3n1TqrirKupC5/1/mnXTrqlBfdaNyNnxzGT1+5u5Nl/UjbPDOat97utbMdaZvT1eaxvn/JlyfszYn9/rn4Im3WfpFYZe5UsRetiK9pmWkZIp7+UFXGqYi+zzWF2maYfpuvrlcWiwPNo6pLnURIWb5OsiJO8jjNTIcR03SFCDin+oq7TiC4QQmzzCQMLQS2GQUhM22LGnEYSWmWRVEUx3GSJLZtG4YhhMjznDEnSVHMbMb8ICiKAhnORZIm2LFpmmEYSiiDjSz0jLFezD3Pw+aZ4xyDmazrxBdCxl8sl0EQQAzaUQxDrH14DGLOOZK4h3HQGgLMggAcJO+dUYYADwx/53wE/tnjHAxZmaOapdlCValhDOJ75wdiePq+jwznHrrYtuUwBnNd11F9OPa/zhiXUpSjNE1RxAht21ZV1TQN5jd7/BZTEPtO2DZiOGNPijJHL8SLxQKe+9vbrgdaDHyMIKGT4ziu68IEnojRBR2hH76Q99jv94fDAeK6rt0e4EiH/+Bnjz9Bd4e/Ob8AUy7mkLJwVUQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;I did it!&quot;
         title=&quot;&quot;
-        src=&quot;/static/898faa7dec1b1fa978fc2a5422b9d515/b9e4f/Job_Tracker.png&quot;
-        srcset=&quot;/static/898faa7dec1b1fa978fc2a5422b9d515/cf440/Job_Tracker.png 148w,
-/static/898faa7dec1b1fa978fc2a5422b9d515/d2d38/Job_Tracker.png 295w,
-/static/898faa7dec1b1fa978fc2a5422b9d515/b9e4f/Job_Tracker.png 590w,
-/static/898faa7dec1b1fa978fc2a5422b9d515/f9b6a/Job_Tracker.png 885w,
-/static/898faa7dec1b1fa978fc2a5422b9d515/2d849/Job_Tracker.png 1180w,
-/static/898faa7dec1b1fa978fc2a5422b9d515/d248c/Job_Tracker.png 1195w&quot;
+        src=&quot;/static/898faa7dec1b1fa978fc2a5422b9d515/fcda8/Job_Tracker.png&quot;
+        srcset=&quot;/static/898faa7dec1b1fa978fc2a5422b9d515/12f09/Job_Tracker.png 148w,
+/static/898faa7dec1b1fa978fc2a5422b9d515/e4a3f/Job_Tracker.png 295w,
+/static/898faa7dec1b1fa978fc2a5422b9d515/fcda8/Job_Tracker.png 590w,
+/static/898faa7dec1b1fa978fc2a5422b9d515/efc66/Job_Tracker.png 885w,
+/static/898faa7dec1b1fa978fc2a5422b9d515/c83ae/Job_Tracker.png 1180w,
+/static/898faa7dec1b1fa978fc2a5422b9d515/4d383/Job_Tracker.png 1195w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -212,7 +212,7 @@ decided it was time to figure something out. A friend mentored me and within 4 m
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a9327ff8fbcb588a4384b5d10371150a/48a11/getajobmeme.jpg&quot;
+    href=&quot;/static/a9327ff8fbcb588a4384b5d10371150a/41099/getajobmeme.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -224,17 +224,17 @@ decided it was time to figure something out. A friend mentored me and within 4 m
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 66.60000000000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAE/8QAFQEBAQAAAAAAAAAAAAAAAAAAAQL/2gAMAwEAAhADEAAAAczA81jik//EABkQAAMBAQEAAAAAAAAAAAAAAAECAxESAP/aAAgBAQABBQIFy3eh6HqdN8xxaNrf/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGBAAAwEBAAAAAAAAAAAAAAAAARARADH/2gAIAQEABj8CE4wJqv/EABoQAQEBAAMBAAAAAAAAAAAAAAERACExUWH/2gAIAQEAAT8hUlfUMJOfhcJBePcoi61QZrodTf/aAAwDAQACAAMAAAAQBx//xAAWEQEBAQAAAAAAAAAAAAAAAAABEGH/2gAIAQMBAT8QXJ//xAAYEQACAwAAAAAAAAAAAAAAAAAAAREhQf/aAAgBAgEBPxBKdKP/xAAbEAEAAwEBAQEAAAAAAAAAAAABABEhMXFBof/aAAgBAQABPxC4dI4qeI+TgUtDb7zYORMUAT8jKIBtvwuKQ32VsECS9n//2Q==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAwAE/8QAFgEBAQEAAAAAAAAAAAAAAAAAAgAB/9oADAMBAAIQAxAAAAHMwOVjirP/xAAZEAADAQEBAAAAAAAAAAAAAAABAgMREgD/2gAIAQEAAQUCBct3oeh6nTfMcWja3//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABgQAAMBAQAAAAAAAAAAAAAAAAEQEQAx/9oACAEBAAY/AhOMCar/xAAaEAEBAQEBAQEAAAAAAAAAAAABEQAhUTFh/9oACAEBAAE/IVJX1DCTv4XDQXnuURcNUGa6Hyb/2gAMAwEAAgADAAAAEAQ//8QAFhEBAQEAAAAAAAAAAAAAAAAAARBh/9oACAEDAQE/EFyf/8QAGBEAAgMAAAAAAAAAAAAAAAAAAAERIUH/2gAIAQIBAT8QSnSj/8QAHBABAAIDAAMAAAAAAAAAAAAAAQARITFxQWGh/9oACAEBAAE/ELh0jhU6R5NBS0N+6zBSJhQBPkZRAZt8FxSGeytggSXn3P/Z&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Get A Job meme&quot;
         title=&quot;&quot;
-        src=&quot;/static/a9327ff8fbcb588a4384b5d10371150a/48a11/getajobmeme.jpg&quot;
-        srcset=&quot;/static/a9327ff8fbcb588a4384b5d10371150a/8ee9c/getajobmeme.jpg 148w,
-/static/a9327ff8fbcb588a4384b5d10371150a/ebbe7/getajobmeme.jpg 295w,
-/static/a9327ff8fbcb588a4384b5d10371150a/48a11/getajobmeme.jpg 500w&quot;
+        src=&quot;/static/a9327ff8fbcb588a4384b5d10371150a/41099/getajobmeme.jpg&quot;
+        srcset=&quot;/static/a9327ff8fbcb588a4384b5d10371150a/a80bd/getajobmeme.jpg 148w,
+/static/a9327ff8fbcb588a4384b5d10371150a/1c91a/getajobmeme.jpg 295w,
+/static/a9327ff8fbcb588a4384b5d10371150a/41099/getajobmeme.jpg 500w&quot;
         sizes=&quot;(max-width: 500px) 100vw, 500px&quot;
       /&gt;
     &lt;/span&gt;
@@ -259,7 +259,7 @@ already had a job in training and were getting education to move up in their com
 
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/657f690df4d8e1a36ca27641ffc78917/e2288/studentloanmeme.jpg&quot;
+    href=&quot;/static/657f690df4d8e1a36ca27641ffc78917/c08c5/studentloanmeme.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -271,18 +271,18 @@ already had a job in training and were getting education to move up in their com
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 104.84374999999999%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAVABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAMCBQT/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB6cIRjtIK9GiNiv/EABoQAAMBAAMAAAAAAAAAAAAAAAECAwQQEUH/2gAIAQEAAQUCaqhjqmplRapWTu746Fck2lD0dnj/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAdEAABBAIDAAAAAAAAAAAAAAABAAIRMQMSIDKR/9oACAEBAAY/AiCVbvFs2lk6whEFauueH//EABwQAQACAgMBAAAAAAAAAAAAAAEAESExEEGRUf/aAAgBAQABPyF6gkqjos+oAt6ZheGTF7jG0CqIQGrGOFQeR9h5x//aAAwDAQACAAMAAAAQTwCA/8QAFhEAAwAAAAAAAAAAAAAAAAAAESAh/9oACAEDAQE/EBE//8QAFhEBAQEAAAAAAAAAAAAAAAAAEAFB/9oACAECAQE/ENKf/8QAGxABAQADAQEBAAAAAAAAAAAAAREAITFRQWH/2gAIAQEAAT8QT6O7Q5e4NvNQoPRxC01ERpiCjqgBho39Pc/bfKHt5hhziG6XWOsKu3pwRgTBQK19mf/Z&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 104.72972972972974%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAVABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAMCBQT/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB6cIRjtIK9GiNiv/EABoQAAMBAAMAAAAAAAAAAAAAAAECAwQQEUH/2gAIAQEAAQUCaqhjqmplRapWTu746Fck2lD0dnj/xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAEDAQE/AR//xAAUEQEAAAAAAAAAAAAAAAAAAAAg/9oACAECAQE/AR//xAAdEAABBAIDAAAAAAAAAAAAAAABAAIRMQMSIDKR/9oACAEBAAY/AiCVbvFs2lk6whEFauueH//EABwQAQACAgMBAAAAAAAAAAAAAAEAESExEEGRUf/aAAgBAQABPyF6gkqjos+oAt6ZheGTF7jG0CqIQGrGOFQeR9h5x//aAAwDAQACAAMAAAAQTwCA/8QAFhEAAwAAAAAAAAAAAAAAAAAAESAh/9oACAEDAQE/EBE//8QAFhEBAQEAAAAAAAAAAAAAAAAAEAFB/9oACAECAQE/ENKf/8QAGxABAQADAQEBAAAAAAAAAAAAAREAITFRQWH/2gAIAQEAAT8QT6O7Q5e4NvNQoPRxC01ERpiCiqgBho39Pc/bfKHt5hhziG6XWOsKu3pwRgTBQK19mf/Z&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Get A Job meme&quot;
         title=&quot;&quot;
-        src=&quot;/static/657f690df4d8e1a36ca27641ffc78917/c739e/studentloanmeme.jpg&quot;
-        srcset=&quot;/static/657f690df4d8e1a36ca27641ffc78917/8ee9c/studentloanmeme.jpg 148w,
-/static/657f690df4d8e1a36ca27641ffc78917/ebbe7/studentloanmeme.jpg 295w,
-/static/657f690df4d8e1a36ca27641ffc78917/c739e/studentloanmeme.jpg 590w,
-/static/657f690df4d8e1a36ca27641ffc78917/e2288/studentloanmeme.jpg 640w&quot;
+        src=&quot;/static/657f690df4d8e1a36ca27641ffc78917/1c72d/studentloanmeme.jpg&quot;
+        srcset=&quot;/static/657f690df4d8e1a36ca27641ffc78917/a80bd/studentloanmeme.jpg 148w,
+/static/657f690df4d8e1a36ca27641ffc78917/1c91a/studentloanmeme.jpg 295w,
+/static/657f690df4d8e1a36ca27641ffc78917/1c72d/studentloanmeme.jpg 590w,
+/static/657f690df4d8e1a36ca27641ffc78917/c08c5/studentloanmeme.jpg 640w&quot;
         sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
       /&gt;
     &lt;/span&gt;
@@ -318,7 +318,7 @@ about it. Keep checking in.
 
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/80f3fa8695fea9d0a4f6771204458a1b/8d2b4/iareprogrammermeme.jpg&quot;
+    href=&quot;/static/80f3fa8695fea9d0a4f6771204458a1b/08ff2/iareprogrammermeme.jpg&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -330,17 +330,17 @@ about it. Keep checking in.
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 74.68354430379746%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAFM16ozDRF//8QAGxABAAICAwAAAAAAAAAAAAAAAgEDABIUITH/2gAIAQEAAQUC8c2XHHO66FjKR48Z/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAIAQMBAT8BR//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABwQAAIBBQEAAAAAAAAAAAAAAAABAhEhIjJhgv/aAAgBAQAGPwJwUteXZdU8lWSjfLIo5PrN2f/EAB0QAQACAgIDAAAAAAAAAAAAAAEAESExQWFxgfH/2gAIAQEAAT8hChXmGZ1K/c0oi7DuqiZcX6eIoqN0ZZ82f//aAAwDAQACAAMAAAAQpw//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPxBT/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQBB/9oACAECAQE/EJHL/8QAHBABAAICAwEAAAAAAAAAAAAAAQARITFBYYFR/9oACAEBAAE/EEL3EWhqz3x1FqAFh7Puo2qdByvCXkbgvCva4YrE3A9N5g5kvM//2Q==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAMEBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAFM16ozDRF//8QAGxABAAICAwAAAAAAAAAAAAAAAgEDABIUITH/2gAIAQEAAQUC8c2XHHO66FrKR48Z/8QAFREBAQAAAAAAAAAAAAAAAAAAACH/2gAIAQMBAT8BR//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABwQAAIBBQEAAAAAAAAAAAAAAAABAhEhIjJhgv/aAAgBAQAGPwJwUteXZdU8lWSjfLIo5PrN2f/EAB0QAAIBBAMAAAAAAAAAAAAAAAABESExQWFxgfH/2gAIAQEAAT8hSgV5pVmiPvMtBtw3EDVVG/TgaIi8FWeaf//aAAwDAQACAAMAAAAQpw//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAwEBPxBT/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQBB/9oACAECAQE/EJHL/8QAHBABAAICAwEAAAAAAAAAAAAAAQARITFBYYFR/9oACAEBAAE/EEL3EWhqz3x1FqAFg9n3UbVOg5XhLwNxnCva4Yrk3A9N5g5kvM//2Q==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
         alt=&quot;Get A Job meme&quot;
         title=&quot;&quot;
-        src=&quot;/static/80f3fa8695fea9d0a4f6771204458a1b/8d2b4/iareprogrammermeme.jpg&quot;
-        srcset=&quot;/static/80f3fa8695fea9d0a4f6771204458a1b/8ee9c/iareprogrammermeme.jpg 148w,
-/static/80f3fa8695fea9d0a4f6771204458a1b/ebbe7/iareprogrammermeme.jpg 295w,
-/static/80f3fa8695fea9d0a4f6771204458a1b/8d2b4/iareprogrammermeme.jpg 474w&quot;
+        src=&quot;/static/80f3fa8695fea9d0a4f6771204458a1b/08ff2/iareprogrammermeme.jpg&quot;
+        srcset=&quot;/static/80f3fa8695fea9d0a4f6771204458a1b/a80bd/iareprogrammermeme.jpg 148w,
+/static/80f3fa8695fea9d0a4f6771204458a1b/1c91a/iareprogrammermeme.jpg 295w,
+/static/80f3fa8695fea9d0a4f6771204458a1b/08ff2/iareprogrammermeme.jpg 474w&quot;
         sizes=&quot;(max-width: 474px) 100vw, 474px&quot;
       /&gt;
     &lt;/span&gt;
