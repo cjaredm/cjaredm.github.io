@@ -109,7 +109,7 @@ class HomeIndex extends React.Component {
                     Thanks for visiting! Don't be a stranger, feel free to reach
                     out and say hello!
                     <br />
-                    <strong>contact@cjaredm.com</strong>
+                    <a href="mailto:jared@cjaredm.com"><strong>jared@cjaredm.com</strong></a>
                   </p>
                   <p>
                     I am someone who takes things apart to see how each part

@@ -18,6 +18,7 @@ const Footer = props => (
         <h4>Have a question? Send me a message.</h4>
         <div className="col-6">
           <div className="mb-5">
+            <label htmlFor="_replyto">Email</label>
             <input
               type="email"
               name="_replyto"
@@ -29,12 +30,13 @@ const Footer = props => (
         </div>
         <div className="col-12">
           <div className="mb-5">
+            <label htmlFor="message">Message</label>
             <textarea
               name="message"
               id="message"
               placeholder="Enter your message*"
               rows="6"
-            ></textarea>
+            />
           </div>
         </div>
         <div className="col-12">

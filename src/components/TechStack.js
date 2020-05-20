@@ -79,7 +79,7 @@ const TECHS = {
     href: 'https://www.apollographql.com/',
   },
   [TECH_NAME.node]: {
-    img: 'https://nodejs.org/static/images/logos/nodejs-new-pantone-black.png',
+    img: 'https://www.excelsiortechnologies.com/img/about/node-js.png',
     label: 'Node',
     href: 'https://nodejs.org/',
   },
