@@ -13,6 +13,32 @@
     border-top: 0 !important;
   }
 
+  section {
+    &:nth-child(n + 1) {
+      background-color: _palette(accent1);
+    }
+
+    &:nth-child(n + 2) {
+      background-color: _palette(accent2);
+    }
+
+    &:nth-child(n + 3) {
+      background-color: _palette(accent3);
+    }
+
+    &:nth-child(n + 4) {
+      background-color: _palette(accent4);
+    }
+
+    &:nth-child(n + 5) {
+      background-color: _palette(accent5);
+    }
+
+    &:nth-child(n + 6) {
+      background-color: _palette(accent6);
+    }
+  }
+
   > section {
     @include vendor('display', 'flex');
     @include vendor('flex-direction', 'row');
@@ -50,7 +76,7 @@
       @include vendor('flex-direction', 'column');
       @include vendor('justify-content', 'center');
       @include vendor('align-items', 'center');
-      @include padding(2em, 3em);
+      padding: 2em 3em;
       width: 70%;
 
       > .inner {
@@ -62,7 +88,6 @@
 
     &:nth-child(2n) {
       @include vendor('flex-direction', 'row-reverse');
-      background-color: desaturate(lighten(_palette(bg-alt), 4), 2);
 
       > .content {
         @include vendor('align-items', 'flex-end');
@@ -115,5 +140,15 @@
         @include padding(3em, 1.5em);
       }
     }
+  }
+}
+
+.portfolio-section__img-wrapper {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  a {
+    box-shadow: none;
   }
 }

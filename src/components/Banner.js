@@ -1,7 +1,7 @@
 import React from 'react';
 import { ContactIcons } from './ContactIcons';
 import profile from '../assets/images/profile.jpeg';
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Banner = props => (
   <Section img={props.img} id="banner" className="major">
@@ -45,6 +45,6 @@ const Banner = props => (
 export default Banner;
 
 const Section = styled.section`
-  background: url(${({img}) => img}) no-repeat center center fixed;
+  background: url(${({ img }) => img}) no-repeat center center fixed;
   background-size: cover;
 `;

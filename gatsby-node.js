@@ -1,66 +1,53 @@
 const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
-exports.createPages = ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions }) => {
   const { createPage } = actions;
-
-  const blogPost = path.resolve(`./src/templates/blog-post.js`);
-  return graphql(
+  const result = await graphql(
     `
-      {
-        allMarkdownRemark(
-          sort: { fields: [frontmatter___date], order: DESC }
-          limit: 1000
-        ) {
+      query PageData {
+        posts: allStrapiBlogPosts {
           edges {
             node {
-              fields {
-                slug
-              }
-              frontmatter {
-                title
-              }
+              route
+            }
+          }
+        }
+        portfolioItems: allStrapiPortfolioItem {
+          edges {
+            node {
+              route
             }
           }
         }
       }
     `
-  ).then(result => {
-    if (result.errors) {
-      throw result.errors;
-    }
+  );
 
-    // Create blog posts pages.
-    const posts = result.data.allMarkdownRemark.edges;
-
-    posts.forEach((post, index) => {
-      const previous = index === posts.length - 1 ? null : posts[index + 1].node;
-      const next = index === 0 ? null : posts[index - 1].node;
-
-      createPage({
-        path: post.node.fields.slug,
-        component: blogPost,
-        context: {
-          slug: post.node.fields.slug,
-          previous,
-          next,
-        },
-      })
-    });
-
-    return null;
-  });
-}
-
-exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
-
-  if (node.internal.type === `MarkdownRemark`) {
-    const value = createFilePath({ node, getNode });
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    });
+  if (result.errors) {
+    throw result.errors;
   }
+
+  // Create blog posts pages.
+  const posts = result.data.posts.edges;
+  posts.forEach(post => {
+    createPage({
+      path: post.node.route,
+      component: require.resolve('./src/templates/blog-post.js'),
+      context: {
+        route: post.node.route,
+      },
+    });
+  });
+  // Create blog posts pages.
+  const portfolioItems = result.data.portfolioItems.edges;
+  portfolioItems.forEach(item => {
+    createPage({
+      path: item.node.route,
+      component: require.resolve('./src/templates/portfolio-item.js'),
+      context: {
+        route: item.node.route,
+      },
+    });
+  });
 };

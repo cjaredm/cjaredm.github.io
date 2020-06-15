@@ -8,9 +8,15 @@
   .grid-wrapper {
     display: grid;
     grid-gap: 0 2.25em;
-    grid-template-columns: repeat(12, 1fr);
+    // Uncomment when we figure out mutliple media for screenshots
+    // grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     margin: 0 auto;
     width: 100%;
+
+    // Ditto to multiple media issue
+    img {
+      height: 400px;
+    }
   }
 
   /* Generate Columns 1 through 12 */

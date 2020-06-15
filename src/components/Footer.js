@@ -1,61 +1,88 @@
 import React from 'react';
+import { Link, useStaticQuery, graphql } from 'gatsby';
 import { ContactIcons } from './ContactIcons';
+import ContactForm from './ContactForm';
 import styled from 'styled-components';
 
-const Footer = props => (
-  <footer id="footer">
-    <div className="inner">
-      <ContactIcons />
+const Footer = props => {
+  const { posts, items } = useStaticQuery(graphql`
+    query {
+      posts: allStrapiBlogPosts(
+        limit: 5
+        sort: { order: DESC, fields: created_at }
+      ) {
+        nodes {
+          id
+          route
+          title
+        }
+      }
 
-      <ul className="copyright">
-        <li>&copy; cJaredm</li>
-        <li>
-          GatsbyTheme: <A href="https://html5up.net">HTML5 UP</A>
-        </li>
-      </ul>
+      items: allStrapiPortfolioItem(
+        filter: { featured: { eq: true } }
+        limit: 5
+        sort: { order: DESC, fields: created_at }
+      ) {
+        nodes {
+          name
+          route
+        }
+      }
+    }
+  `);
 
-      <form action="https://formspree.io/xyyerdyg" method="POST">
-        <h4>Have a question? Send me a message.</h4>
-        <div className="col-6">
-          <div className="mb-5">
-            <label htmlFor="_replyto">Email</label>
-            <input
-              type="email"
-              name="_replyto"
-              id="_replyto"
-              defaultValue=""
-              placeholder="Email*"
-            />
+  return (
+    <footer id="footer">
+      <div className="inner">
+        <div className="footer__wrapper">
+          <ContactForm />
+
+          <div className="footer__section-wrapper">
+            <nav className="footer__links-sections">
+              <div className="footer__links-section">
+                <Link to="/blog">
+                  <h3>Featured Posts</h3>
+                </Link>
+                <ul className="footer__links">
+                  {posts?.nodes?.map(item => (
+                    <li key={item.route}>
+                      <Link to={item.route}>{item.title}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+
+              <div className="footer__links-section">
+                <Link to="/portfolio">
+                  <h3>Featured Portfolio</h3>
+                </Link>
+                <ul className="footer__links">
+                  {items?.nodes?.map(item => (
+                    <li key={item.route}>
+                      <Link to={item.route}>{item.name}</Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </nav>
+
+            <ContactIcons className="align-center" />
           </div>
         </div>
-        <div className="col-12">
-          <div className="mb-5">
-            <label htmlFor="message">Message</label>
-            <textarea
-              name="message"
-              id="message"
-              placeholder="Enter your message*"
-              rows="6"
-            />
-          </div>
-        </div>
-        <div className="col-12">
-          <ul className="actions">
-            <li>
-              <input type="submit" value="Send Message" className="special" />
-            </li>
-            <li>
-              <input type="reset" value="Reset" />
-            </li>
-          </ul>
-        </div>
-      </form>
-    </div>
-  </footer>
-);
+
+        <ul className="copyright">
+          <li>&copy; cJaredm</li>
+          <li>
+            GatsbyTheme: Modified <A href="https://html5up.net">HTML5 UP</A>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;
 
 const A = styled.a`
-  box-shadow: 0 0 0 0;
+  box-shadow: none;
 `;

@@ -19,13 +19,13 @@
     @include vendor('align-items', 'center');
     @include vendor('display', 'flex');
     @include vendor(
-                    'transition',
-                            (
-                                    'transform 0.25s ease',
-                                    'opacity 0.25s ease',
-                                    'filter 1s ease',
-                                    '-webkit-filter 1s ease'
-                            )
+      'transition',
+      (
+        'transform 0.25s ease',
+        'opacity 0.25s ease',
+        'filter 1s ease',
+        '-webkit-filter 1s ease'
+      )
     );
     @include padding(4em, 4em);
     background-position: center;
@@ -87,18 +87,30 @@
       content: '';
       display: block;
       height: 100%;
-      left: 0;
       position: absolute;
       top: 0;
+      left: 0;
       width: 100%;
       z-index: 1;
     }
 
+    .tile__link {
+      box-shadow: none;
+    }
+
+    .tile__content p {
+      border: 10px solid transparent;
+      position: relative;
+      z-index: 3;
+      margin: 0;
+    }
+
     &:hover {
-      header {
-        background-color: rgba(255, 255, 255, 0.75);
+      header,
+      .tile__content {
+        background-color: rgba(255, 255, 255, 0.85);
         border-radius: 5px;
-        border: 10px solid transparent;
+        transition: color 500ms;
       }
 
       &:before {

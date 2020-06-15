@@ -1,19 +1,13 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: `cJaredm Dev Blog`,
     author: `Jared Mortenson`,
     description: `Portfolio and Dev Blog for cJaredm`,
     siteUrl: `https://cjaredm.com`,
-    social: [
-      {
-        name: `twitter`,
-        url: "https://twitter.com/cjaredm",
-      },
-      {
-        name: "github",
-        url: "https://github.com/cjaredm",
-      },
-    ],
   },
   plugins: [
     'gatsby-plugin-react-helmet',
@@ -21,6 +15,15 @@ module.exports = {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         // Add any options here
+      },
+    },
+    {
+      resolve: 'gatsby-source-strapi',
+      options: {
+        apiURL: process.env.API_URL || 'http://localhost:1337',
+        queryLimit: 1000,
+        contentTypes: [`blog-posts`, `portfolio-item`, `social`, `tech`],
+        singleTypes: [`site-info`, 'defaults'],
       },
     },
     {
@@ -73,15 +76,14 @@ module.exports = {
         ],
       },
     },
-    `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
-    `gatsby-plugin-feed`,
-    `gatsby-plugin-react-helmet`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
       },
     },
+    'gatsby-plugin-offline',
   ],
-}
+};

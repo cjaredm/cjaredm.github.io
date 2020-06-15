@@ -1,53 +1,50 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import styled from 'styled-components';
+import ReactMarkdown from 'react-markdown';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import { rhythm } from '../utils/typography';
-import { NextPrevPosts } from '../components/NextPrevPosts';
+// import { NextPrevPosts } from '../components/NextPrevPosts';
 
-class BlogPostTemplate extends React.Component {
-  render() {
-    const post = this.props.data.markdownRemark;
-    const siteTitle = this.props.data.site.siteMetadata.title;
-    const { previous, next } = this.props.pageContext;
+function BlogPostTemplate(props) {
+  const { post, site } = props?.data;
+  // const { previous, next } = props.pageContext;
 
-    return (
-      <Layout location={this.props.location} title={siteTitle}>
-        <Wrapper>
-          <SEO title={post.frontmatter.title} description={post.excerpt} />
-          <h1>{post.frontmatter.title}</h1>
-          <Date>{post.frontmatter.date}</Date>
+  return (
+    <Layout location={props.location} title={site.siteName}>
+      <Wrapper>
+        <SEO title={post.title} description={post.synopsis} />
+        <h1>{post.title}</h1>
+        <Date>{post.date}</Date>
 
-          <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <ReactMarkdown source={post.content} />
 
-          <HR />
+        <HR />
 
-          <NextPrevPosts next={next} previous={previous} />
-        </Wrapper>
-      </Layout>
-    );
-  }
+        {/* <NextPrevPosts next={next} previous={previous} /> */}
+      </Wrapper>
+    </Layout>
+  );
 }
 
 export default BlogPostTemplate;
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
-    site {
-      siteMetadata {
-        title
-        author
-      }
+  query BlogPostByID($route: String!) {
+    site: strapiSiteInfo {
+      about
+      email
+      siteName
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+
+    post: strapiBlogPosts(route: { eq: $route }) {
       id
-      excerpt(pruneLength: 160)
-      html
-      frontmatter {
-        title
-        date(formatString: "MMMM DD, YYYY")
-      }
+      strapiId
+      date(formatString: "MMMM DD, yyyy")
+      title
+      synopsis
+      content
     }
   }
 `;

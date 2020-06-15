@@ -56,18 +56,20 @@ export function PortfolioPage({
                     <div className="grid-wrapper">
                       {screenshots.map((img, i) => (
                         <div className="col-4" key={img}>
-                          <span className="image fit">
+                          <button
+                            className="image fit"
+                            onClick={() =>
+                              setModal(
+                                <Images images={screenshots} selected={i} />
+                              )
+                            }
+                          >
                             <img
                               src={img}
                               alt="screen shot"
-                              style={{cursor: 'pointer'}}
-                              onClick={() =>
-                                setModal(
-                                  <Images images={screenshots} selected={i} />
-                                )
-                              }
+                              style={{ cursor: 'pointer' }}
                             />
-                          </span>
+                          </button>
                         </div>
                       ))}
                     </div>

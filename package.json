@@ -18,7 +18,7 @@
     "format": "prettier --write '**/*.js'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "gatsby build && gh-pages -d public -b master",
-    "start": "npm run develop",
+    "start": "yarn develop",
     "serve": "gatsby serve"
   },
   "dependencies": {
@@ -40,6 +40,7 @@
     "gatsby-remark-responsive-iframe": "^2.1.1",
     "gatsby-remark-smartypants": "^2.0.9",
     "gatsby-source-filesystem": "^2.0.31",
+    "gatsby-source-strapi": "^0.0.12",
     "gatsby-transformer-remark": "^2.3.10",
     "gatsby-transformer-sharp": "^2.1.18",
     "gh-pages": "^2.0.1",
@@ -48,6 +49,7 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "react-markdown": "^4.3.1",
     "react-typography": "^0.16.19",
     "styled-components": "^4.3.2",
     "typeface-merriweather": "0.0.72",

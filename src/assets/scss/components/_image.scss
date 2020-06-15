@@ -60,3 +60,16 @@
     }
   }
 }
+
+button.screenshot-btn {
+  height: 100%;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  padding: 20px;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}

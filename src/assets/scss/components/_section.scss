@@ -6,7 +6,8 @@
 
 /* Section/Article */
 
-section, article {
+section,
+article {
   &.special {
     text-align: center;
   }
@@ -18,7 +19,7 @@ header {
     width: -webkit-max-content;
     width: -ms-max-content;
     width: max-content;
-    margin-bottom: _size(element-margin);
+    margin-bottom: 10px;
 
     > :first-child {
       margin-bottom: 0;
@@ -29,8 +30,8 @@ header {
         background-color: _palette(fg-bold);
         display: block;
         height: 2px;
-        margin: 0.325em 0 0.5em 0;
-        width: 100%;
+        margin: 0.1em 0 0.3em 0;
+        width: 95%;
       }
     }
 
