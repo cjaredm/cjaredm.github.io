@@ -18,7 +18,7 @@ function PortfolioPage({ data }) {
           <SEO title={`cJaredm - ${item.name}`} description={item.excerpt} />
 
           <Hero
-            imgUrl={item?.screenshots?.publicUrl}
+            imgUrl={item?.screenshot?.childImageSharp?.fluid?.src}
             name={item.name}
             content={item.excerpt}
           />
@@ -97,7 +97,6 @@ export const pageQuery = graphql`
         name
         url
         image {
-          publicURL
           childImageSharp {
             fluid {
               srcSet

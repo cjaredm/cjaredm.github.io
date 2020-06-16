@@ -53,7 +53,6 @@ export const pageQuery = graphql`
         route
         cardText
         screenshot {
-          publicURL
           name
           childImageSharp {
             fluid {
@@ -69,7 +68,7 @@ export const pageQuery = graphql`
 function PortfolioSection({ route, name, cardText, screenshot, ...props }) {
   const { defaultSrcSet } = props;
   // const imageSrcSet = img?.childImageSharp?.fluid?.srcSet;
-  const imgURL = screenshot?.publicURL;
+  const imgSrcSet = screenshot?.childImageSharp?.fluid?.srcSet;
 
   return (
     <section>
@@ -77,8 +76,8 @@ function PortfolioSection({ route, name, cardText, screenshot, ...props }) {
         <Link to={route}>
           <img
             className="image"
-            src={imgURL || ''}
-            srcSet={imgURL ? '' : defaultSrcSet}
+            src=""
+            srcSet={imgSrcSet ? imgSrcSet : defaultSrcSet}
             alt=""
           />
         </Link>

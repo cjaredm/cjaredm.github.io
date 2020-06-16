@@ -42,9 +42,9 @@ export const pageQuery = graphql`
 
     defaults: strapiDefaults {
       postImage {
-        publicURL
         childImageSharp {
           fluid {
+            src
             srcSet
           }
         }

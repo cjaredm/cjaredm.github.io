@@ -31,7 +31,6 @@ export const pageQuery = graphql`
 
     defaults: strapiDefaults {
       postImage {
-        publicURL
         childImageSharp {
           fluid {
             srcSet
@@ -49,7 +48,6 @@ export const pageQuery = graphql`
         synopsis
         date(formatString: "MMMM DD, yyyy")
         image {
-          publicURL
           childImageSharp {
             fluid {
               srcSet

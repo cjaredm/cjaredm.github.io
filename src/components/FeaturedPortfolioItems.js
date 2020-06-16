@@ -7,7 +7,11 @@ export default function FeaturedPortfolioItems() {
     query PORTFOLIO_ITEMS {
       defaults: strapiDefaults {
         postImage {
-          publicURL
+          childImageSharp {
+            fluid {
+              src
+            }
+          }
         }
       }
       items: allStrapiPortfolioItem(filter: { featured: { eq: true } }) {
@@ -16,7 +20,6 @@ export default function FeaturedPortfolioItems() {
           route
           cardText
           screenshot {
-            publicURL
             childImageSharp {
               fluid {
                 src
@@ -34,8 +37,8 @@ export default function FeaturedPortfolioItems() {
       {items?.nodes?.map((item, i) => {
         const img =
           item?.screenshot?.childImageSharp?.fluid?.src ||
-          item?.screenshot?.publicURL ||
-          defaults.postImage.publichURL;
+          // item?.screenshot?.publicURL ||
+          defaults?.postImage?.childImageSharp?.fluid?.src;
 
         return (
           <article
