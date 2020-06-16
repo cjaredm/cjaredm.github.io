@@ -113,11 +113,6 @@ export const pageQuery = graphql`
           }
         }
       }
-      links {
-        name
-        url
-        iconName
-      }
     }
   }
 `;
