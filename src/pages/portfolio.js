@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, graphql } from 'gatsby';
 import SEO from '../components/seo';
 import Layout from '../components/layout';
-import Hero from '../components/Hero';
+import Hero from '../components/page/Portfolio/Hero';
 
 export default function Portfolio(props) {
   const { data } = props;
@@ -34,36 +34,6 @@ export default function Portfolio(props) {
     </Layout>
   );
 }
-
-export const pageQuery = graphql`
-  query {
-    defaults: strapiDefaults {
-      postImage {
-        childImageSharp {
-          fluid {
-            src
-            srcSet
-          }
-        }
-      }
-    }
-    items: allStrapiPortfolioItem {
-      nodes {
-        name
-        route
-        cardText
-        screenshot {
-          name
-          childImageSharp {
-            fluid {
-              srcSet
-            }
-          }
-        }
-      }
-    }
-  }
-`;
 
 function PortfolioSection({ route, name, cardText, screenshot, ...props }) {
   const { defaultSrcSet } = props;
@@ -100,3 +70,33 @@ function PortfolioSection({ route, name, cardText, screenshot, ...props }) {
     </section>
   );
 }
+
+export const pageQuery = graphql`
+  query {
+    defaults: strapiDefaults {
+      postImage {
+        childImageSharp {
+          fluid {
+            src
+            srcSet
+          }
+        }
+      }
+    }
+    items: allStrapiPortfolioItem {
+      nodes {
+        name
+        route
+        cardText
+        screenshot {
+          name
+          childImageSharp {
+            fluid {
+              srcSet
+            }
+          }
+        }
+      }
+    }
+  }
+`;

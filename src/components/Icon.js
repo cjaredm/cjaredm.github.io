@@ -5,7 +5,7 @@ export default function Icon({ url, iconName, name }) {
   return (
     <A href={url}>
       <span className={`icon alt ${iconName}`}>{name}</span>
-      <span className="">{name}</span>
+      <span>{name}</span>
     </A>
   );
 }

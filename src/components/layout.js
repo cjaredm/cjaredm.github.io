@@ -3,9 +3,9 @@ import Header from './Header';
 import Menu from './Menu';
 import Footer from './Footer';
 import '../assets/scss/main.scss';
-import Modal from './Modal'
+import Modal from './Modal';
 
-class Layout extends React.Component {
+export default class Layout extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -34,7 +34,7 @@ class Layout extends React.Component {
     });
   }
 
-  setModal = (modal) => this.setState({modal});
+  setModal = modal => this.setState({ modal });
 
   render() {
     const { children } = this.props;
@@ -43,13 +43,13 @@ class Layout extends React.Component {
       <div
         className={`body ${this.state.loading} ${
           this.state.isMenuVisible ? 'is-menu-visible' : ''
-        } ${
-          this.state.modal ? 'modal-is-visible' : ''
-        }`}
+        } ${this.state.modal ? 'modal-is-visible' : ''}`}
       >
         <div id="wrapper">
           <Header onToggleMenu={this.handleToggleMenu} />
-          {typeof children === 'function' ? children({setModal: this.setModal}) : children}
+          {typeof children === 'function'
+            ? children({ setModal: this.setModal })
+            : children}
           <Footer />
         </div>
         <Menu onToggleMenu={this.handleToggleMenu} />
@@ -58,5 +58,3 @@ class Layout extends React.Component {
     );
   }
 }
-
-export default Layout;

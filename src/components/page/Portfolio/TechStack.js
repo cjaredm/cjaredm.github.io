@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
-import { getImageAttrs } from '../utils/db';
+import { getImageAttrs } from '../../../utils/db';
 
-export function TechStack({ techs = [] }) {
+export default function TechStack({ techs = [] }) {
   return (
     <Wrapper>
       {techs.map(({ name, url, image }, i) => {

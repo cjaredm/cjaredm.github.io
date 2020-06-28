@@ -7,7 +7,7 @@ import SEO from '../components/seo';
 import { rhythm } from '../utils/typography';
 // import { NextPrevPosts } from '../components/NextPrevPosts';
 
-function BlogPostTemplate(props) {
+export default function BlogPostTemplate(props) {
   const { post, site } = props?.data;
   // const { previous, next } = props.pageContext;
 
@@ -27,8 +27,6 @@ function BlogPostTemplate(props) {
     </Layout>
   );
 }
-
-export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostByID($route: String!) {

@@ -1,10 +1,10 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
-import Layout from './layout';
+import Layout from '../../layout';
 import Hero from './Hero';
-import { TechStack } from './TechStack';
-import { Carousel } from './Carousel';
+import TechStack from './TechStack';
+import { Carousel } from '../../Carousel';
 
 export function PortfolioPage({
   helmetProps,

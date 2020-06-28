@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
-import { PostsList } from '../pages/blog';
+import { PostsList } from '../Blog/post-parts';
 
-export function FeaturedBlogPosts({ posts = [], defaultImage }) {
+export default function FeaturedBlogPosts({ posts = [], defaultImage }) {
   return (
     <Section>
       <Link to="/blog" className="align-center">

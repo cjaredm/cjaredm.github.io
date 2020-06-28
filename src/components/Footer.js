@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link, useStaticQuery, graphql } from 'gatsby';
-import { ContactIcons } from './ContactIcons';
-import ContactForm from './ContactForm';
 import styled from 'styled-components';
+import ContactForm from './ContactForm';
+import { ContactIcons } from './ContactIcons';
 
-const Footer = props => {
+export default function Footer(props) {
   const { posts, items } = useStaticQuery(graphql`
     query {
       posts: allStrapiBlogPosts(
@@ -79,9 +79,7 @@ const Footer = props => {
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
 
 const A = styled.a`
   box-shadow: none;

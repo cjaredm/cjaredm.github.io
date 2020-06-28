@@ -4,12 +4,11 @@ import styled from 'styled-components';
 import ReactMarkdown from 'react-markdown';
 import SEO from '../components/seo';
 import Layout from '../components/layout';
-import Hero from '../components/Hero';
-// import Icon from '../components/Icon';
-import { TechStack } from '../components/TechStack';
+import Hero from '../components/page/Portfolio/Hero';
+import TechStack from '../components/page/Portfolio/TechStack';
 import { Carousel } from '../components/Carousel';
 
-function PortfolioPage({ data }) {
+export default function PortfolioPage({ data }) {
   const { item = {} } = data;
   return (
     <Layout>
@@ -59,7 +58,6 @@ function PortfolioPage({ data }) {
                   <div className="box alt">
                     <div className="grid-wrapper">
                       <button
-                        // key={item.screenshot.name}
                         className="screenshot-btn"
                         onClick={() =>
                           setModal(<Images images={[item.screenshot]} />)
@@ -81,8 +79,6 @@ function PortfolioPage({ data }) {
     </Layout>
   );
 }
-
-export default PortfolioPage;
 
 export const pageQuery = graphql`
   query PortfolioItemByRoute($route: String!) {

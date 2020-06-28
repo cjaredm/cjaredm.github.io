@@ -20,10 +20,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-strapi',
       options: {
-        apiURL:
-          'https://cjaredm-strapi.herokuapp.com' ||
-          process.env.API_URL ||
-          'http://localhost:1337',
+        apiURL: process.env.API_URL,
         queryLimit: 1000,
         contentTypes: [`blog-posts`, `portfolio-item`, `social`, `tech`],
         singleTypes: [`site-info`, 'defaults'],
@@ -43,20 +40,6 @@ module.exports = {
     },
     'gatsby-plugin-sass',
     'gatsby-plugin-offline',
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/content/blog`,
-    //     name: `blog`,
-    //   },
-    // },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/content/assets`,
-    //     name: `assets`,
-    //   },
-    // },
     {
       resolve: `gatsby-transformer-remark`,
       options: {

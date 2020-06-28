@@ -1,8 +1,8 @@
 import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
+import { useStaticQuery, graphql } from 'gatsby';
 
-const Hero = ({ imgUrl, name, content }) => {
+export default function Hero({ imgUrl, name, content }) {
   const { defaults } = useStaticQuery(graphql`
     query {
       defaults: strapiDefaults {
@@ -34,9 +34,7 @@ const Hero = ({ imgUrl, name, content }) => {
       </div>
     </Section>
   );
-};
-
-export default Hero;
+}
 
 const Section = styled.section`
   background: url(${({ imgUrl }) => imgUrl}) no-repeat center center fixed;

@@ -1,19 +1,16 @@
-/* eslint-disable */
 import React from 'react';
 import styled from 'styled-components';
 
-const Modal = ({children, close}) => children ? (
-  <Wrapper id="modal">
-    <div className="inner">
-      {children}
-    </div>
-    <a className="close" onClick={close}>
-      Close
-    </a>
-  </Wrapper>
-) : null;
-
-export default Modal;
+export default function Modal({ children, close }) {
+  return children ? (
+    <Wrapper id="modal">
+      <div className="inner">{children}</div>
+      <button className="close" onClick={close}>
+        Close
+      </button>
+    </Wrapper>
+  ) : null;
+}
 
 const Wrapper = styled.div`
   box-shadow: none;

@@ -1,19 +1,19 @@
 /* eslint-disable */
 import React from 'react';
-import SEO from '../components/seo';
 import { graphql } from 'gatsby';
+import SEO from '../components/seo';
 import Layout from '../components/layout';
-import Banner from '../components/Banner';
-import { FeaturedBlogPosts } from '../components/FeaturedBlogPosts';
-import FeaturedPortfolioItems from '../components/FeaturedPortfolioItems';
-import About from '../components/About';
+import Banner from '../components/page/Home/Banner';
+import FeaturedBlogPosts from '../components/page/Home/FeaturedBlogPosts';
+import FeaturedPortfolioItems from '../components/page/Home/FeaturedPortfolioItems';
+import About from '../components/page/Home/About';
 import hero from '../assets/images/backend-frontend.jpg';
 
 export default function Home(props) {
   const { data } = props;
   return (
     <Layout>
-      <SEO title="cjaredm - Frontend Developer" description="" />
+      <SEO title="cjaredm - Frontend Developer" />
       <Banner img={hero} />
 
       <FeaturedBlogPosts
