@@ -31,7 +31,10 @@ export default function Banner(props) {
               </div>
               <ul className="actions">
                 <li>
-                  <a href="#one" className="button next scrolly">
+                  <a
+                    href="#featured-portfolio-items"
+                    className="button next scrolly"
+                  >
                     View My Work
                   </a>
                 </li>

@@ -33,7 +33,7 @@ export default function FeaturedPortfolioItems() {
 
   if (!items?.nodes.length) return null;
   return (
-    <section id="one" className="tiles">
+    <section id="featured-portfolio-items" className="tiles">
       {items?.nodes?.map((item, i) => {
         const img =
           item?.screenshot?.childImageSharp?.fluid?.src ||
